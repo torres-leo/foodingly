@@ -1,0 +1,57 @@
+.Appbar {
+	background-color: $green;
+	color: $white;
+	padding: 10px 0;
+	width: 100%;
+
+	&Content {
+		display: flex;
+		justify-content: space-between;
+		max-width: 100%;
+		margin: 0 248px;
+	}
+
+	&Info {
+		display: flex;
+		flex: 1;
+		color: $white;
+	}
+
+	&-item {
+		list-style: none;
+		font-family: $font-primary;
+		font-size: 14px;
+		margin-right: 25px;
+		color: $white;
+		line-height: 1.5;
+		font-weight: 400;
+	}
+
+	&-icon {
+		text-decoration: none;
+		color: $white;
+		padding: 0 5px;
+		font-size: 13px;
+	}
+
+	&Settings {
+		display: flex;
+		flex: 1;
+		justify-content: flex-end;
+	}
+
+	&-setting {
+		color: $white;
+		list-style: none;
+		padding: 0 15px;
+		font-family: $font-primary;
+		font-size: 14px;
+		font-weight: 500 !important;
+		line-height: 1.5;
+
+		&:hover {
+			cursor: pointer;
+			color: $black;
+		}
+	}
+}

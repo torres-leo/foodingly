@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.Appbar {
+  background-color: #80c100;
+  color: #ffffff;
+  padding: 10px 0;
+  width: 100%; }
+  .AppbarContent {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 248px; }
+  .AppbarInfo {
+    display: flex;
+    flex: 1;
+    color: #ffffff; }
+  .Appbar-item {
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    margin-right: 25px;
+    color: #ffffff;
+    line-height: 1.5;
+    font-weight: 400; }
+  .Appbar-icon {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0 5px;
+    font-size: 13px; }
+  .AppbarSettings {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end; }
+  .Appbar-setting {
+    color: #ffffff;
+    list-style: none;
+    padding: 0 15px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 500 !important;
+    line-height: 1.5; }
+    .Appbar-setting:hover {
+      cursor: pointer;
+      color: #212529; }
+
+.Appmenu {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  margin: 0 248px;
+  padding: 12px 0; }
+  .AppmenuContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 60px; }
+  .AppmenuImage {
+    background-image: url("https://foodingly.netlify.app/assets/img/logo.png");
+    width: 197px;
+    height: 40px; }
+  .Appmenu-item {
+    color: #212529;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 10px;
+    flex: 1; }
+  .AppmenuButtons {
+    display: flex;
+    align-items: center; }
+  .Appmenu-button {
+    list-style: none;
+    font-size: 22px;
+    padding: 0 15px; }
+
+.btn {
+  padding: 10px;
+  background-color: #80c100;
+  border: 2px solid #80c100;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  border-radius: 5px;
+  padding: 7px 10px;
+  line-height: 1.5;
+  text-align: center;
+  transition: all 0.3s ease-in-out 0.1s; }
+  .btn.primary:hover {
+    background-color: #ffffff;
+    color: #212529; }
+
+/*# sourceMappingURL=main.css.map */
