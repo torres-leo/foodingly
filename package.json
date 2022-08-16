@@ -10,14 +10,10 @@
 		"scss": "node-sass --source-map ./src/assets/css --watch ./src/assets/scss -o ./src/assets/css"
 	},
 	"dependencies": {
-		"@fortawesome/fontawesome-svg-core": "^6.1.2",
-		"@fortawesome/free-brands-svg-icons": "^6.1.2",
-		"@fortawesome/free-solid-svg-icons": "^6.1.2",
-		"@fortawesome/react-fontawesome": "^0.2.0",
-		"babel-plugin-macros": "^3.1.0",
 		"node-sass": "^7.0.1",
 		"react": "^18.2.0",
-		"react-dom": "^18.2.0"
+		"react-dom": "^18.2.0",
+		"sass": "^1.54.4"
 	},
 	"devDependencies": {
 		"@types/react": "^18.0.17",

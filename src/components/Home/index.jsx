@@ -1,11 +1,19 @@
 import React from 'react';
 import Layout from '../Layout';
-import BestOptions from './BestOptions';
+import Hero from './Hero';
+import Reservation from './Reservation';
+import SpecialOrders from './SpecialOrders';
+import Products from './Products';
+import DinnerPlan from './DinnerPlan';
 
 const Home = () => {
 	return (
 		<Layout>
-			<BestOptions />
+			<Hero />
+			<Reservation />
+			<SpecialOrders />
+			<Products />
+			<DinnerPlan />
 		</Layout>
 	);
 };

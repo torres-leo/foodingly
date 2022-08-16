@@ -1,4 +1,4 @@
-.btn {
+.button {
 	background-color: $green;
 	border: 2px solid $green;
 	border-radius: 5px;
@@ -6,15 +6,27 @@
 	font-family: $font-primary;
 	font-size: 16px;
 	line-height: 1.5;
-	padding: 10px;
-	padding: 7px 10px;
 	text-align: center;
 	transition: all 0.3s ease-in-out 0.1s;
 
+	&:hover {
+		cursor: pointer;
+	}
+
 	&.primary {
+		padding: 7px 10px;
 		&:hover {
 			background-color: $white;
-			color: $black;
+			color: map-get($black, secondary);
+		}
+	}
+
+	&.secondary {
+		border: none;
+		padding: 12px 35px;
+		&:hover {
+			background-color: map-get($black, primary);
+			color: $white;
 		}
 	}
 }

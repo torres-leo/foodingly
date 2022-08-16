@@ -51,7 +51,7 @@
 
 		&:hover {
 			cursor: pointer;
-			color: $black;
+			color: map-get($black, secondary);
 		}
 	}
 }

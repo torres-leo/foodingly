@@ -36,7 +36,9 @@ const AppMenu = () => {
 					</li>
 
 					<li className='Appmenu-button'>
-						<Button className='btn primary'>Reservation</Button>
+						<Button type='button' className='button primary'>
+							Reservation
+						</Button>
 					</li>
 				</ul>
 			</div>
