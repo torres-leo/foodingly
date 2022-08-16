@@ -1,7 +1,7 @@
 import React from 'react';
 import Icon from '../Icon';
 
-const Appbar = () => {
+const AppBar = () => {
 	return (
 		<div className='Appbar'>
 			<div className='AppbarContent'>
@@ -33,4 +33,4 @@ const Appbar = () => {
 	);
 };
 
-export default Appbar;
+export default AppBar;

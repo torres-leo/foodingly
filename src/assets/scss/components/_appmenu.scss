@@ -9,25 +9,25 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		width: 100%;
 		padding-left: 60px;
+		width: 100%;
 	}
 
 	&Image {
 		background-image: url('https://foodingly.netlify.app/assets/img/logo.png');
-		width: 197px;
 		height: 40px;
+		width: 197px;
 	}
 
 	&-item {
 		color: $black;
-		text-decoration: none;
+		flex: 1;
 		font-family: $font-secondary;
-		line-height: 1.5;
 		font-size: 16px;
 		font-weight: 600;
+		line-height: 1.5;
 		padding: 0 10px;
-		flex: 1;
+		text-decoration: none;
 	}
 
 	&Buttons {
@@ -36,8 +36,8 @@
 	}
 
 	&-button {
-		list-style: none;
 		font-size: 22px;
+		list-style: none;
 		padding: 0 15px;
 	}
 }

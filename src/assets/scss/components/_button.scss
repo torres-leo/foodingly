@@ -1,13 +1,13 @@
 .btn {
-	padding: 10px;
 	background-color: $green;
 	border: 2px solid $green;
-	color: $white;
-	font-size: 16px;
-	font-family: $font-primary;
 	border-radius: 5px;
-	padding: 7px 10px;
+	color: $white;
+	font-family: $font-primary;
+	font-size: 16px;
 	line-height: 1.5;
+	padding: 10px;
+	padding: 7px 10px;
 	text-align: center;
 	transition: all 0.3s ease-in-out 0.1s;
 

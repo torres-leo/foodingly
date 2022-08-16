@@ -1,13 +1,13 @@
 import React from 'react';
-import Appbar from './Appbar';
-import AppMenu from './AppMenu';
+import Header from './Header';
+import Footer from './Footer';
 
 const index = ({ children }) => {
 	return (
 		<>
-			<Appbar />
-			<AppMenu />
+			<Header />
 			{children}
+			<Footer />
 		</>
 	);
 };

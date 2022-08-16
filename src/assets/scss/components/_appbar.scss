@@ -12,26 +12,26 @@
 	}
 
 	&Info {
+		color: $white;
 		display: flex;
 		flex: 1;
-		color: $white;
 	}
 
 	&-item {
-		list-style: none;
+		color: $white;
 		font-family: $font-primary;
 		font-size: 14px;
-		margin-right: 25px;
-		color: $white;
-		line-height: 1.5;
 		font-weight: 400;
+		list-style: none;
+		line-height: 1.5;
+		margin-right: 25px;
 	}
 
 	&-icon {
-		text-decoration: none;
 		color: $white;
-		padding: 0 5px;
 		font-size: 13px;
+		padding: 0 5px;
+		text-decoration: none;
 	}
 
 	&Settings {
@@ -42,12 +42,12 @@
 
 	&-setting {
 		color: $white;
-		list-style: none;
-		padding: 0 15px;
 		font-family: $font-primary;
 		font-size: 14px;
 		font-weight: 500 !important;
+		list-style: none;
 		line-height: 1.5;
+		padding: 0 15px;
 
 		&:hover {
 			cursor: pointer;
