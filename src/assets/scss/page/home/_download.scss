@@ -1,5 +1,4 @@
-.Banner {
-	width: 100%;
+.Download {
 	background-color: $white;
 
 	&Content {
@@ -12,14 +11,16 @@
 
 	&-info {
 		width: 720px;
+		padding-top: 50px;
 	}
 
 	&-title {
-		color: map-get($black, secondary);
 		font-family: $font-primary;
 		font-size: 53px;
-		font-weight: 500;
 		line-height: 80px;
+		font-weight: 500;
+		max-width: 665px;
+		margin-bottom: 20px;
 	}
 
 	&-text {
@@ -33,12 +34,24 @@
 	}
 
 	&-image {
-		background-image: url('https://foodingly.netlify.app/assets/img/promotion/promo-1.png');
-		width: 546px;
-		height: 321px;
-		background-position: center;
-		background-size: cover;
+		background-image: url('https://foodingly.netlify.app/assets/img/promotion/app.png');
+		width: 446px;
+		height: 556px;
+	}
+
+	&-buttons {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 22px;
+	}
+
+	&-button {
+		width: 167px;
+		height: 58px;
 		background-repeat: no-repeat;
-		object-fit: cover;
+		background-size: cover;
+		background-position: center;
+		border-radius: 6px;
 	}
 }

@@ -1,0 +1,55 @@
+.Subscribe {
+	background-color: $white;
+
+	&-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 auto;
+		padding: 80px 0;
+		width: 1440px;
+	}
+
+	&-info {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+	}
+
+	&-icon {
+		background-image: url('https://foodingly.netlify.app/assets/img/common/email.png');
+		width: 123.39px;
+		height: 104.03px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		object-fit: cover;
+	}
+
+	&-text {
+		color: map-get($black, secondary);
+		font-family: $font-primary;
+		font-size: 20px;
+		font-weight: 500;
+		margin-bottom: 11px;
+
+		&:last-child {
+			font-size: 36px;
+			margin-bottom: 0;
+		}
+	}
+
+	&-input {
+		border: 2px dashed #dddddd75;
+		font-size: 16px;
+		font-weight: 400;
+		height: 55px;
+		padding: 10px 22px;
+		width: 427.5px;
+
+		&:focus {
+			border: 2px dashed $green;
+			outline: none;
+		}
+	}
+}

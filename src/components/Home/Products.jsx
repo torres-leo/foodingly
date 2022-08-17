@@ -4,8 +4,8 @@ const Products = () => {
 	return (
 		<div className='Products'>
 			<div className='ProductsContent'>
-				<p className='Products-text'>Our Featured Items</p>
-				<h2 className='Products-title'>Our most popular items</h2>
+				<h3 className='Products-title'>Our Featured Items</h3>
+				<h2 className='Products-text'>Our most popular items</h2>
 			</div>
 		</div>
 	);

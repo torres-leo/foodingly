@@ -1,4 +1,5 @@
 @import 'base/reset';
+@import 'base/fonts';
 @import 'base/variables';
 @import 'base/placeholder';
 
@@ -6,6 +7,11 @@
 @import 'page/home/hero';
 @import 'page/home/reservation';
 @import 'page/home/products';
+@import 'page/home/specialOffers';
+@import 'page/home/chefs';
+@import 'page/home/download';
+@import 'page/home/testimonial';
+@import 'page/home/subscribe';
 
 @import 'components/appbar';
 @import 'components/appmenu';

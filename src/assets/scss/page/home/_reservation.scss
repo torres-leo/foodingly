@@ -10,31 +10,33 @@
 	&-text {
 		color: map-get($black, secondary);
 		font-family: $font-primary;
-		font-size: 24px;
-		font-weight: map-get($weigth, light);
-		margin-bottom: 20px;
-		text-align: center;
-
-		@extend .arrows;
-	}
-
-	&-title {
-		color: map-get($black, secondary);
-		font-family: $font-primary;
 		font-size: 36px;
-		font-weight: map-get($weigth, medium);
+		font-weight: 500;
 		line-height: 40px;
 		margin-bottom: 15px;
 		text-align: center;
 
 		&::after {
-			content: '';
 			background: $green;
+			content: '';
 			display: block;
 			height: 1px;
-			margin: 0 auto;
+			left: 50%;
 			margin-top: 15px;
+			position: absolute;
+			transform: translate(-50%, 50%);
 			width: 200px;
 		}
+	}
+
+	&-title {
+		color: map-get($black, secondary);
+		font-family: $font-primary;
+		font-size: 24px;
+		font-weight: 300;
+		margin-bottom: 20px;
+		text-align: center;
+
+		@extend .arrows;
 	}
 }
