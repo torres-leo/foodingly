@@ -1,0 +1,71 @@
+.Footer {
+	padding: 100px 0;
+
+	&-content {
+		width: 1440px;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		gap: 10px;
+		margin: 0 auto;
+	}
+
+	&-title {
+		border-bottom: 1px solid $green;
+		color: map-get($black, secondary);
+		display: inline-block;
+		font-size: 18px;
+		font-family: $font-primary;
+		font-weight: 500;
+		line-height: 1.2;
+		margin-bottom: 25px;
+	}
+
+	&-helpInfo {
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	&-help {
+		border-left: 2px solid $green;
+		margin-bottom: 20px;
+		padding-left: 9px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&-helpText {
+		font-size: 16px;
+		font-family: $font-primary;
+		font-weight: 500;
+		line-height: 1.2;
+		margin-bottom: 8px;
+	}
+
+	&-helpGreen {
+		color: $green;
+		font-size: 24px;
+		font-family: $font-primary;
+		font-weight: 500;
+		line-height: 1.2;
+		transition: color ease-in-out 0.3s;
+
+		&:hover {
+			color: map-get($black, secondary);
+		}
+	}
+
+	&-link {
+		font-size: 16px;
+		font-family: $font-primary;
+		list-style: none;
+		margin-bottom: 15px;
+		text-transform: capitalize;
+	}
+
+	&-tablecell {
+		border: 1px solid map-get($gray, medium);
+	}
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import ArticleChefs from './ArticleChefs';
 
 const Chefs = () => {
 	return (
@@ -9,30 +10,10 @@ const Chefs = () => {
 					<h2 className='Chefs-text'>Our Experienced chefs</h2>
 				</div>
 				<div className='ChefsCards'>
-					<article className='Chefs-card'>
-						<div
-							style={{ backgroundImage: `url("https://foodingly.netlify.app/assets/img/chefs/chefs-1.png")` }}
-							className='Chefs-image'
-						/>
-					</article>
-					<article className='Chefs-card'>
-						<div
-							style={{ backgroundImage: `url("https://foodingly.netlify.app/assets/img/chefs/chefs-2.png")` }}
-							className='Chefs-image'
-						/>
-					</article>
-					<article className='Chefs-card'>
-						<div
-							style={{ backgroundImage: `url("https://foodingly.netlify.app/assets/img/chefs/chefs-3.png")` }}
-							className='Chefs-image'
-						/>
-					</article>
-					<article className='Chefs-card'>
-						<div
-							style={{ backgroundImage: `url("https://foodingly.netlify.app/assets/img/chefs/chefs-4.png")` }}
-							className='Chefs-image'
-						/>
-					</article>
+					<ArticleChefs className='Chefs-card' url='https://foodingly.netlify.app/assets/img/chefs/chefs-1.png' />
+					<ArticleChefs className='Chefs-card' url='https://foodingly.netlify.app/assets/img/chefs/chefs-2.png' />
+					<ArticleChefs className='Chefs-card' url='https://foodingly.netlify.app/assets/img/chefs/chefs-3.png' />
+					<ArticleChefs className='Chefs-card' url='https://foodingly.netlify.app/assets/img/chefs/chefs-4.png' />
 				</div>
 			</div>
 		</div>

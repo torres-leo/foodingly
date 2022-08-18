@@ -6,11 +6,9 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
-		"preview": "vite preview",
-		"scss": "node-sass --source-map ./src/assets/css --watch ./src/assets/scss -o ./src/assets/css"
+		"preview": "vite preview"
 	},
 	"dependencies": {
-		"node-sass": "^7.0.1",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"sass": "^1.54.4"

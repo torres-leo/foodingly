@@ -57,7 +57,7 @@
 		width: 336px;
 		height: 350.81px;
 		background-color: map-get($gray, light);
-		box-shadow: 8px 10px 24px rgb(0 0 0 / 10%);
+		box-shadow: $shadow;
 		text-align: center;
 		border: 5px solid $white;
 	}
