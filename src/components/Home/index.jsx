@@ -9,6 +9,7 @@ import Chefs from './Chefs';
 import Download from './Download';
 import Testimonials from './Testimonials';
 import Subscribe from './Subscribe';
+import Blog from './Blog';
 
 const Home = () => {
 	return (
@@ -22,6 +23,7 @@ const Home = () => {
 			<Download />
 			<Testimonials />
 			<Subscribe />
+			<Blog />
 		</Layout>
 	);
 };
