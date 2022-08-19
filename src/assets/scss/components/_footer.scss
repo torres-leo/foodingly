@@ -1,12 +1,10 @@
 .Footer {
-	padding: 100px 0;
-
-	&-content {
-		width: 1440px;
+	&-container {
+		width: 1420px;
 		display: flex;
-		justify-content: space-between;
+		justify-content: flex-start;
 		align-items: flex-start;
-		gap: 10px;
+		padding: 100px 0;
 		margin: 0 auto;
 	}
 
@@ -18,18 +16,20 @@
 		font-family: $font-primary;
 		font-weight: 500;
 		line-height: 1.2;
-		margin-bottom: 25px;
+		padding-bottom: 5px;
+		margin-bottom: 20px;
 	}
 
 	&-helpInfo {
 		display: flex;
 		align-items: flex-start;
 		flex-direction: column;
+		margin-top: 5px;
 	}
 
 	&-help {
 		border-left: 2px solid $green;
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 		padding-left: 9px;
 		&:last-child {
 			margin-bottom: 0;
@@ -57,17 +57,101 @@
 		}
 	}
 
-	&-link {
-		font-size: 16px;
-		font-family: $font-primary;
+	&-socialList {
+		display: flex;
+		// justify-content: center;
+		align-items: center;
+		gap: 8px;
+	}
+
+	&-socialLink {
 		list-style: none;
-		margin-bottom: 15px;
+	}
+
+	&-icon {
+		color: $green;
+	}
+
+	&-quick {
+		margin-left: 228px;
+	}
+
+	&-list {
+		margin-top: 5px;
+	}
+
+	&-link {
+		margin-bottom: 18px;
+		list-style: none;
+	}
+
+	&-item {
+		color: map-get($black, primary);
+		font-family: $font-primary;
+		font-size: 16px;
+		text-decoration: none;
 		text-transform: capitalize;
+		transition: color ease-in-out 0.35s;
+
+		&:hover {
+			color: $green;
+		}
+	}
+
+	&-support {
+		margin-left: 118px;
+	}
+
+	&-opening {
+		margin-left: 88px;
+	}
+
+	&-table {
+		display: table;
+		border: 1px solid map-get($gray, thin);
+		border-collapse: collapse;
+		border-spacing: 2px;
+		border-style: solid;
+		width: 450px;
 	}
 
 	&-tablecell {
 		border: 1px solid map-get($gray, medium);
-		padding: 8px;
+		color: map-get($black, secondary);
+		font-family: $font-primary;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1.5;
 		margin: 0;
+		padding: 8px;
+		text-align: left;
+	}
+
+	&-copyright {
+		background-color: #f3f6fd;
+		padding: 15px 0;
+		width: 100%;
+	}
+
+	&-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 auto;
+		width: 1420px;
+	}
+
+	&-text {
+		color: map-get($black, primary);
+		font-family: $font-secondary;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 28px;
+	}
+
+	&-image {
+		background-image: url('https://foodingly.netlify.app/assets/img/common/cards.png');
+		height: 35px;
+		width: 212px;
 	}
 }

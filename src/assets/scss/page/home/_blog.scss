@@ -49,18 +49,25 @@
 	}
 
 	&-cards {
-		width: 100%;
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		justify-content: space-around;
+		height: 570px;
+		width: 100%;
 	}
 
 	&-card {
 		background-color: $white;
 		border-radius: 12px;
 		box-shadow: $shadow;
-		height: 575px;
+		height: 542px;
 		width: 456px;
+
+		&:hover {
+			.Blog-image {
+				transform: scale(1);
+			}
+		}
 	}
 
 	&-image {
@@ -72,12 +79,11 @@
 		border-top-left-radius: 12px;
 		height: 274.11px;
 		object-fit: cover;
-		// position: relative;
 		width: 100%;
 	}
 
 	&-cardInfo {
-		padding: 35px 20px;
+		padding: 35px 20px 15px;
 	}
 
 	&-cardTitle {
@@ -123,7 +129,7 @@
 	&-icon {
 		background-color: $cream;
 		border-radius: 50px;
-		font-size: 16px;
+		font-size: 17px;
 		padding: 8px;
 	}
 

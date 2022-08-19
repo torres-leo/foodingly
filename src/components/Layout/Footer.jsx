@@ -1,9 +1,10 @@
 import React from 'react';
+import Icon from '../Icon';
 
 const Footer = () => {
 	return (
 		<div className='Footer'>
-			<div className='Footer-content'>
+			<div className='Footer-container'>
 				<div>
 					<h5 className='Footer-title'>
 						<span>Need any help?</span>
@@ -19,73 +20,149 @@ const Footer = () => {
 						</div>
 						<div className='Footer-help'>
 							<p className='Footer-helpText'>Follow us on</p>
-							<p>Follow us on</p>
+							<ul className='Footer-socialList'>
+								<li className='Footer-socialLink'>
+									<a href='' className='Footer-icon'>
+										<Icon className='fa-brands fa-square-facebook' />
+									</a>
+								</li>
+								<li className='Footer-socialLink'>
+									<a href='' className='Footer-icon'>
+										<Icon className='fa-brands fa-square-twitter' />
+									</a>
+								</li>
+								<li className='Footer-socialLink'>
+									<a href='' className='Footer-icon'>
+										<Icon className='fa-brands fa-instagram' />
+									</a>
+								</li>
+								<li className='Footer-socialLink'>
+									<a href='' className='Footer-icon'>
+										<Icon className='fa-brands fa-linkedin' />
+									</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 
-				<div>
+				<div className='Footer-quick'>
 					<h5 className='Footer-title'>
 						<span>Quick links</span>
 					</h5>
-					<ul>
-						<li className='Footer-link'>About us</li>
-						<li className='Footer-link'>Testimonials</li>
-						<li className='Footer-link'>Faqs</li>
-						<li className='Footer-link'>Terms Service</li>
-						<li className='Footer-link'>Food Grid</li>
-						<li className='Footer-link'>Blog</li>
+					<ul className='Footer-list'>
+						<li className='Footer-link'>
+							<a href='' className='Footer-item'>
+								About us
+							</a>
+						</li>
+						<li className='Footer-link'>
+							<a href='' className='Footer-item'>
+								Testimonials
+							</a>
+						</li>
+						<li className='Footer-link'>
+							<a href='' className='Footer-item'>
+								Faqs
+							</a>
+						</li>
+						<li className='Footer-link'>
+							<a href='' className='Footer-item'>
+								Terms Service
+							</a>
+						</li>
+						<li className='Footer-link'>
+							<a href='' className='Footer-item'>
+								Food Grid
+							</a>
+						</li>
+						<li className='Footer-link'>
+							<a href='' className='Footer-item'>
+								Blog
+							</a>
+						</li>
 					</ul>
 				</div>
 
-				<div>
+				<div className='Footer-support'>
 					<h5 className='Footer-title'>
 						<span>Support</span>
 					</h5>
 
-					<ul>
-						<li className='Footer-link'>customer dashboard</li>
-						<li className='Footer-link'>login</li>
-						<li className='Footer-link'>cart</li>
-						<li className='Footer-link'>contact</li>
-						<li className='Footer-link'>reservation</li>
-						<li className='Footer-link'>privacy policy</li>
+					<ul className='Footer-list'>
+						<li className='Footer-link'>
+							<a href='' className='Footer-item'>
+								customer dashboard
+							</a>
+						</li>
+						<li className='Footer-link'>
+							<a href='' className='Footer-item'>
+								login
+							</a>
+						</li>
+						<li className='Footer-link'>
+							<a href='' className='Footer-item'>
+								cart
+							</a>
+						</li>
+						<li className='Footer-link'>
+							<a href='' className='Footer-item'>
+								contact
+							</a>
+						</li>
+						<li className='Footer-link'>
+							<a href='' className='Footer-item'>
+								reservation
+							</a>
+						</li>
+						<li className='Footer-link'>
+							<a href='' className='Footer-item'>
+								privacy policy
+							</a>
+						</li>
 					</ul>
 				</div>
 
-				<div>
+				<div className='Footer-opening'>
 					<h5 className='Footer-title'>
 						<span>Opening hours</span>
 					</h5>
-					<table>
-						<tr>
-							<td className='Footer-tablecell'>Monday</td>
-							<td className='Footer-tablecell'>0.9.00-18.00</td>
-						</tr>
-						<tr>
-							<td className='Footer-tablecell'>Tuesday</td>
-							<td className='Footer-tablecell'>10.0.00-18.00</td>
-						</tr>
-						<tr>
-							<td className='Footer-tablecell'>Wednesday</td>
-							<td className='Footer-tablecell'>11.0.00-18.00</td>
-						</tr>
-						<tr>
-							<td className='Footer-tablecell'>Thursday</td>
-							<td className='Footer-tablecell'>12.0.00-18.00</td>
-						</tr>
-						<tr>
-							<td className='Footer-tablecell'>Thursday</td>
-							<td className='Footer-tablecell'>14.0.00-18.00</td>
-						</tr>
-						<tr>
-							<td className='Footer-tablecell'>Saturday, Sunday</td>
-							<td className='Footer-tablecell'>closed</td>
-						</tr>
+					<table className='Footer-table'>
+						<tbody>
+							<tr>
+								<th className='Footer-tablecell'>Monday</th>
+								<td className='Footer-tablecell'>0.9.00-18.00</td>
+							</tr>
+							<tr>
+								<td className='Footer-tablecell'>Tuesday</td>
+								<td className='Footer-tablecell'>10.0.00-18.00</td>
+							</tr>
+							<tr>
+								<td className='Footer-tablecell'>Wednesday</td>
+								<td className='Footer-tablecell'>11.0.00-18.00</td>
+							</tr>
+							<tr>
+								<td className='Footer-tablecell'>Thursday</td>
+								<td className='Footer-tablecell'>12.0.00-18.00</td>
+							</tr>
+							<tr>
+								<td className='Footer-tablecell'>Thursday</td>
+								<td className='Footer-tablecell'>14.0.00-18.00</td>
+							</tr>
+							<tr>
+								<td className='Footer-tablecell'>Saturday, Sunday</td>
+								<td className='Footer-tablecell'>closed</td>
+							</tr>
+						</tbody>
 					</table>
 				</div>
 			</div>
-			<div className='Footer-copyright'></div>
+			<div className='Footer-copyright'>
+				<div className='Footer-content'>
+					<p className='Footer-text'>Copyright &copy; 2022 All Rights Reserved</p>
+					<div className='Footer-image' />
+				</div>
+			</div>
 		</div>
 	);
 };
