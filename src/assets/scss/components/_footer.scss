@@ -67,5 +67,7 @@
 
 	&-tablecell {
 		border: 1px solid map-get($gray, medium);
+		padding: 8px;
+		margin: 0;
 	}
 }

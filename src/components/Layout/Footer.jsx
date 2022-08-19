@@ -63,24 +63,24 @@ const Footer = () => {
 							<td className='Footer-tablecell'>0.9.00-18.00</td>
 						</tr>
 						<tr>
-							<td>Tuesday</td>
-							<td>10.0.00-18.00</td>
+							<td className='Footer-tablecell'>Tuesday</td>
+							<td className='Footer-tablecell'>10.0.00-18.00</td>
 						</tr>
 						<tr>
-							<td>Wednesday</td>
-							<td>11.0.00-18.00</td>
+							<td className='Footer-tablecell'>Wednesday</td>
+							<td className='Footer-tablecell'>11.0.00-18.00</td>
 						</tr>
 						<tr>
-							<td>Thursday</td>
-							<td>12.0.00-18.00</td>
+							<td className='Footer-tablecell'>Thursday</td>
+							<td className='Footer-tablecell'>12.0.00-18.00</td>
 						</tr>
 						<tr>
-							<td>Thursday</td>
-							<td>14.0.00-18.00</td>
+							<td className='Footer-tablecell'>Thursday</td>
+							<td className='Footer-tablecell'>14.0.00-18.00</td>
 						</tr>
 						<tr>
-							<td>Saturday, Sunday</td>
-							<td>closed</td>
+							<td className='Footer-tablecell'>Saturday, Sunday</td>
+							<td className='Footer-tablecell'>closed</td>
 						</tr>
 					</table>
 				</div>

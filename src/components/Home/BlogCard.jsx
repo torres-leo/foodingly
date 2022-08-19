@@ -1,11 +1,12 @@
 import React from 'react';
 import Icon from '../Icon';
+import Button from '../Button';
 
-const BlogCard = ({ urlImage, title, text, date, by }) => {
+const BlogCard = ({ urlImage, title, text, date, by, textButton }) => {
 	return (
 		<article className='Blog-card'>
 			<div className='Blog-image' style={{ backgroundImage: `url(${urlImage})` }}>
-				<div className='Blog-button'></div>
+				<Button className='button blog'>{textButton}</Button>
 			</div>
 			<div className='Blog-cardInfo'>
 				<h3 className='Blog-cardTitle'>
