@@ -4,14 +4,14 @@
 	padding: 10px 0;
 	width: 100%;
 
-	&Content {
+	&-content {
 		display: flex;
 		justify-content: space-between;
 		max-width: 100%;
 		margin: 0 248px;
 	}
 
-	&Info {
+	&-info {
 		color: $white;
 		display: flex;
 		flex: 1;
@@ -19,12 +19,35 @@
 
 	&-item {
 		color: $white;
+		cursor: pointer;
 		font-family: $font-primary;
 		font-size: 14px;
 		font-weight: 400;
 		list-style: none;
 		line-height: 1.5;
 		margin-right: 25px;
+		transition: color 0.3s ease-in-out;
+
+		&::after {
+			content: '';
+			display: inline-flex;
+			position: relative;
+			top: 5px;
+			right: -15px;
+			width: 1px;
+			height: 15px;
+			background-color: map-get($gray, border);
+		}
+
+		&:nth-of-type(3) {
+			&::after {
+				display: none;
+			}
+		}
+
+		&:hover {
+			color: map-get($black, secondary);
+		}
 	}
 
 	&-icon {
@@ -48,6 +71,24 @@
 		list-style: none;
 		line-height: 1.5;
 		padding: 0 15px;
+		transition: color 0.2s ease-in-out;
+
+		&::after {
+			content: '';
+			display: inline-flex;
+			position: relative;
+			top: 5px;
+			right: -15px;
+			width: 1px;
+			height: 15px;
+			background-color: map-get($gray, border);
+		}
+
+		&:nth-of-type(3) {
+			&::after {
+				display: none;
+			}
+		}
 
 		&:hover {
 			cursor: pointer;

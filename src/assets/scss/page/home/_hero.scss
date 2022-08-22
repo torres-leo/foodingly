@@ -1,12 +1,12 @@
 .Hero {
 	background-image: url('https://foodingly.netlify.app/assets/img/banner/bg.png');
 	background-repeat: no-repeat;
-	// background-position: center center;
 	background-size: cover;
 	object-fit: cover;
 	width: 100%;
+	z-index: -1;
 
-	&Content {
+	&-content {
 		display: flex;
 		align-items: center;
 		flex: 1;

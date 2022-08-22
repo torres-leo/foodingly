@@ -10,6 +10,9 @@ $black: (
 );
 $white: #ffffff;
 $gray: (
+	input: #dddddd75,
+	border: #dbdbdb78,
+
 	dark: #818090,
 	medium: #c4c4c457,
 	regular: #e5e5e5,
@@ -20,3 +23,4 @@ $cream: #fceceb;
 
 //Shadow
 $shadow: 8px 10px 24px rgb(0 0 0 / 10%);
+$shadow-menu: 0 2px 28px 0 rgb(0 0 0 / 6%);

@@ -4,8 +4,8 @@ import Icon from '../Icon';
 const AppBar = () => {
 	return (
 		<div className='Appbar'>
-			<div className='AppbarContent'>
-				<ul className='AppbarInfo'>
+			<div className='Appbar-content'>
+				<ul className='Appbar-info'>
 					<li className='Appbar-item'>
 						<a href='#' className='Appbar-icon'>
 							<Icon className='fa-brands fa-square-facebook' />

@@ -1,11 +1,25 @@
 .Appmenu {
 	background-color: $white;
-	display: flex;
-	align-items: center;
-	margin: 0 248px;
-	padding: 12px 0;
+	box-shadow: $shadow-menu;
+	width: 100%;
+	z-index: 100;
 
-	&Content {
+	&-container {
+		display: flex;
+		align-items: center;
+		margin: 0 248px;
+		overflow: hidden;
+		position: relative;
+		padding: 12px 0;
+	}
+
+	&.sticky {
+		position: sticky;
+		top: 0;
+		// max-width: 100%;
+	}
+
+	&-content {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -13,32 +27,69 @@
 		width: 100%;
 	}
 
-	&Image {
+	&-image {
 		background-image: url('https://foodingly.netlify.app/assets/img/logo.png');
 		height: 40px;
 		width: 225px;
 		background-repeat: no-repeat;
 	}
 
+	&-nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+		width: 630px;
+	}
+
 	&-item {
 		color: map-get($black, primary);
-		flex: 1;
+		display: inline-block;
 		font-family: $font-secondary;
 		font-size: 16px;
 		font-weight: 600;
 		line-height: 1.5;
-		padding: 0 10px;
+		position: relative;
 		text-decoration: none;
+
+		&:hover {
+			.Appmenu-dropdown {
+				display: block;
+				z-index: 100;
+			}
+		}
 	}
 
-	&Buttons {
+	&-dropdown {
+		background-color: $white;
+		display: none;
+		position: absolute;
+		width: 150px;
+		// z-index: 100;
+	}
+
+	&-dropdownItem {
+		display: block;
+	}
+
+	&-buttons {
 		display: flex;
 		align-items: center;
 	}
 
-	&-button {
+	&-icon {
 		font-size: 22px;
+		font-weight: 300;
 		list-style: none;
 		padding: 0 15px;
+
+		&:nth-of-type(1) {
+			&:hover {
+				cursor: pointer;
+			}
+		}
+		&:nth-of-type(2) {
+			color: $green;
+		}
 	}
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import Icon from '../Icon';
 
-const ArticleChefs = ({ className, url }) => {
+const ArticleChefs = ({ className, url, chefName, chefTitle }) => {
 	return (
 		<article className={className}>
 			<div style={{ backgroundImage: `url(${url})` }} className='Chefs-image' />
@@ -28,8 +28,8 @@ const ArticleChefs = ({ className, url }) => {
 						</a>
 					</li>
 				</ul>
-				<h3 className='Chefs-name'>Kristin Watson</h3>
-				<p className='Chefs-profession'>Nutritionist</p>
+				<h3 className='Chefs-name'>{chefName}</h3>
+				<p className='Chefs-profession'>{chefTitle}</p>
 			</div>
 		</article>
 	);

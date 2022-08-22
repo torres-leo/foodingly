@@ -10,10 +10,30 @@ const Chefs = () => {
 					<h2 className='Chefs-text'>Our Experienced chefs</h2>
 				</div>
 				<div className='Chefs-cards'>
-					<ArticleChefs className='Chefs-card' url='https://foodingly.netlify.app/assets/img/chefs/chefs-1.png' />
-					<ArticleChefs className='Chefs-card' url='https://foodingly.netlify.app/assets/img/chefs/chefs-2.png' />
-					<ArticleChefs className='Chefs-card' url='https://foodingly.netlify.app/assets/img/chefs/chefs-3.png' />
-					<ArticleChefs className='Chefs-card' url='https://foodingly.netlify.app/assets/img/chefs/chefs-4.png' />
+					<ArticleChefs
+						className='Chefs-card'
+						url='https://foodingly.netlify.app/assets/img/chefs/chefs-1.png'
+						chefName='Jane Cooper'
+						chefTitle='Chief chef'
+					/>
+					<ArticleChefs
+						className='Chefs-card'
+						url='https://foodingly.netlify.app/assets/img/chefs/chefs-2.png'
+						chefName='Cameron Willamson'
+						chefTitle='Asst. Chef'
+					/>
+					<ArticleChefs
+						className='Chefs-card'
+						url='https://foodingly.netlify.app/assets/img/chefs/chefs-3.png'
+						chefName='Brooklyn Simmons'
+						chefTitle='Asst. Chef'
+					/>
+					<ArticleChefs
+						className='Chefs-card'
+						url='https://foodingly.netlify.app/assets/img/chefs/chefs-4.png'
+						chefName='Kristin Watson'
+						chefTitle='Nutritionist'
+					/>
 				</div>
 			</div>
 		</div>

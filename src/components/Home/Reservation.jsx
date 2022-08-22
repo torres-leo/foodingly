@@ -1,11 +1,13 @@
 import React from 'react';
+import CarouselReservation from './CarouselReservation';
 
 const Reservation = () => {
 	return (
 		<div className='Reservation'>
-			<div className='ReservationHead'>
+			<div className='Reservation-content'>
 				<h3 className='Reservation-title'>Our Reservation</h3>
 				<h2 className='Reservation-text'>What we offer</h2>
+				<CarouselReservation />
 			</div>
 		</div>
 	);
