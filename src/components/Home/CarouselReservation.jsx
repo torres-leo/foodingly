@@ -1,6 +1,6 @@
 import React from 'react';
 // import Swiper from 'swiper';
-// import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
 import { Swiper, SwiperSlide, useSwiperSlide } from 'swiper/react';
 import Slider from 'react-slick';
@@ -20,17 +20,20 @@ const CarouselReservation = () => {
 	// };
 	return (
 		<Swiper
-			// infinite={true}
-			autoPlay
+			modules={[Navigation, Pagination, Scrollbar, A11y]}
+			autoPlay={true}
 			spaceBetween={50}
-			scrollbar={{ draggable: true }}
-			slidesPerView={5}
+			// scrollbar={{ draggable: true }}
+			navigation
+			pagination={{ clickable: true }}
+			slidesPerView={4}
 			onSlideChange={() => console.log('slide change')}
 			onSwiper={(swiper) => console.log(swiper)}
-			SwiperSlide={true}>
+			swiperslide='true'>
 			<SwiperSlide>Slide 1</SwiperSlide>
 			<SwiperSlide>Slide 2</SwiperSlide>
 			<SwiperSlide>Slide 3</SwiperSlide>
+			<SwiperSlide>Slide 4</SwiperSlide>
 			<SwiperSlide>Slide 5</SwiperSlide>
 			<SwiperSlide>Slide 6</SwiperSlide>
 			<SwiperSlide>Slide 7</SwiperSlide>
