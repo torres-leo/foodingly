@@ -4,7 +4,7 @@ import Button from '../Button';
 
 const AppMenu = () => {
 	return (
-		<div className='Appmenu sticky' id='Appmenu'>
+		<div className='Appmenu sticky'>
 			<div className='Appmenu-container'>
 				<div className='Appmenu-image'></div>
 				<div className='Appmenu-content'>

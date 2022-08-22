@@ -5,8 +5,9 @@ import Button from '../Button';
 const BlogCard = ({ urlImage, title, text, date, by, textButton }) => {
 	return (
 		<article className='Blog-card'>
-			<div className='Blog-image' style={{ backgroundImage: `url(${urlImage})` }}>
-				<Button className='button blog'>{textButton}</Button>
+			<div className='Blog-containerImage'>
+				<img className='Blog-image' style={{ backgroundImage: `url(${urlImage})` }} />
+				<span className='button blog'>{textButton}</span>
 			</div>
 			<div className='Blog-cardInfo'>
 				<h3 className='Blog-cardTitle'>

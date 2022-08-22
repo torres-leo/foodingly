@@ -64,13 +64,23 @@
 		overflow: hidden;
 		position: relative;
 		transition: 0.4s all ease-in-out;
-		width: 456px;
+		max-width: 456px;
 
 		&:hover {
 			.Blog-image {
 				transform: scale(1.2) rotate(3deg);
 			}
 		}
+	}
+
+	&-containerImage {
+		height: 100%;
+		max-height: 274.11px;
+		border-top-left-radius: 12px;
+		border-top-right-radius: 12px;
+		overflow: hidden;
+		transition: 0.4s all ease-in-out;
+		width: 100%;
 	}
 
 	&-image {
@@ -80,9 +90,9 @@
 		background-size: cover;
 		border-top-right-radius: 12px;
 		border-top-left-radius: 12px;
-		height: 274.11px;
+		height: 100%;
 		object-fit: cover;
-		position: relative;
+		transition: 0.4s all ease-in-out;
 		width: 100%;
 	}
 

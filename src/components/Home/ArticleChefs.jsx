@@ -9,12 +9,12 @@ const ArticleChefs = ({ className, url, chefName, chefTitle }) => {
 				<ul className='Chefs-socialList'>
 					<li className='Chefs-link'>
 						<a href='' className='Chefs-icon'>
-							<Icon className='fa-brands fa-square-facebook' />
+							<Icon className='fa-brands fa-facebook-f' />
 						</a>
 					</li>
 					<li className='Chefs-link'>
 						<a href='' className='Chefs-icon'>
-							<Icon className='fa-brands fa-square-twitter' />
+							<Icon className='fa-brands fa-twitter' />
 						</a>
 					</li>
 					<li className='Chefs-link'>
@@ -24,7 +24,7 @@ const ArticleChefs = ({ className, url, chefName, chefTitle }) => {
 					</li>
 					<li className='Chefs-link'>
 						<a href='' className='Chefs-icon'>
-							<Icon className='fa-brands fa-linkedin' />
+							<Icon className='fa-brands fa-linkedin-in' />
 						</a>
 					</li>
 				</ul>
