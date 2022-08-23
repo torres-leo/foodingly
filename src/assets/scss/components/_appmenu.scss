@@ -7,8 +7,9 @@
 	&-container {
 		display: flex;
 		align-items: center;
-		margin: 0 248px;
-		overflow: hidden;
+		max-width: 1420px;
+		width: 100%;
+		margin: 0 auto;
 		position: relative;
 		padding: 12px 0;
 	}
@@ -31,6 +32,9 @@
 		height: 40px;
 		width: 225px;
 		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		object-fit: cover;
 	}
 
 	&-nav {
@@ -43,31 +47,62 @@
 
 	&-item {
 		color: map-get($black, primary);
-		display: inline-block;
+		display: block;
 		font-family: $font-secondary;
 		font-size: 16px;
 		font-weight: 600;
 		line-height: 1.5;
+		padding: 10px 0;
 		position: relative;
 		text-decoration: none;
 
 		&:hover {
-			.Appmenu-dropdown {
-				display: block;
-				z-index: 100;
+			.Appmenu-submenu {
+				opacity: 1;
+				visibility: visible;
+				transform: translateY(15px);
 			}
 		}
 	}
 
-	&-dropdown {
+	&-submenu {
 		background-color: $white;
-		display: none;
+		border-radius: 8px;
+		box-shadow: $shadow-submenu;
+		transform: translateY(80px);
+		opacity: 0;
+		visibility: hidden;
+		padding: 10px 0;
 		position: absolute;
-		width: 150px;
+		transition: 0.4s all ease-in-out;
+		width: 230px;
 	}
 
-	&-dropdownItem {
-		display: block;
+	&-submenuItem {
+		font-family: $font-secondary;
+		font-size: 15px;
+		font-weight: 500;
+		list-style: none;
+		padding: 10px 25px;
+		position: relative;
+
+		&:hover {
+			background-color: map-get($gray, submenu);
+		}
+	}
+
+	&-submenuLink {
+		color: map-get($black, secondary);
+		text-decoration: none;
+		&:hover {
+			color: $green;
+		}
+	}
+
+	&-dropIcon {
+		font-family: $font-primary;
+		font-size: 14px;
+		margin-left: 5px;
 	}
 
 	&-buttons {

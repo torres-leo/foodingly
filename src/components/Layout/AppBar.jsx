@@ -24,8 +24,14 @@ const AppBar = () => {
 					<li className='Appbar-item'>contact@domain.com</li>
 				</ul>
 				<ul className='AppbarSettings'>
-					<li className='Appbar-setting'>English</li>
-					<li className='Appbar-setting'>USD</li>
+					<li className='Appbar-setting'>
+						<span className='Appbar-text'>English</span>
+						<Icon className='fa-solid fa-angle-down' />
+					</li>
+					<li className='Appbar-setting'>
+						<span className='Appbar-text'>USD</span>
+						<Icon className='fa-solid fa-angle-down' />
+					</li>
 					<li className='Appbar-setting'>My Account</li>
 				</ul>
 			</div>

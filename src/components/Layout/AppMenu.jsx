@@ -16,35 +16,111 @@ const AppMenu = () => {
 							About us
 						</a>
 						<a href='#' className='Appmenu-item'>
-							Food Menu
-							<ul className='Appmenu-dropdown'>
-								<li className='Appmenu-dropdownItem'>1</li>
-								<li className='Appmenu-dropdownItem'>2</li>
-								<li className='Appmenu-dropdownItem'>3</li>
-								<li className='Appmenu-dropdownItem'>4</li>
-								<li className='Appmenu-dropdownItem'>5</li>
+							<span>Food Menu</span>
+							<span className='Appmenu-dropIcon'>
+								<Icon className='fa-solid fa-angle-down icon' />
+							</span>
+							<ul className='Appmenu-submenu'>
+								<li className='Appmenu-submenuItem'>
+									<a className='Appmenu-submenuLink'>Food Grid</a>
+								</li>
+								<li className='Appmenu-submenuItem'>
+									<a href='' className='Appmenu-submenuLink'>
+										Food Details
+									</a>
+								</li>
+								<li className='Appmenu-submenuItem'>
+									<a href='' className='Appmenu-submenuLink'>
+										Cart View
+									</a>
+								</li>
+								<li className='Appmenu-submenuItem'>
+									<a href='' className='Appmenu-submenuLink'>
+										Checkout View
+									</a>
+								</li>
+								<li className='Appmenu-submenuItem'>
+									<a href='' className='Appmenu-submenuLink'>
+										Order Success
+									</a>
+								</li>
 							</ul>
 						</a>
 						<a href='#' className='Appmenu-item'>
-							Blog
-							<ul className='Appmenu-dropdown'>
-								<li className='Appmenu-dropdownItem'>1</li>
-								<li className='Appmenu-dropdownItem'>2</li>
+							<span>Blog</span>
+							<span className='Appmenu-dropIcon'>
+								<Icon className='fa-solid fa-angle-down' />
+							</span>
+							<ul className='Appmenu-submenu'>
+								<li className='Appmenu-submenuItem'>
+									<a href='' className='Appmenu-submenuLink'>
+										Blog
+									</a>
+								</li>
+								<li className='Appmenu-submenuItem'>
+									<a href='' className='Appmenu-submenuLink'>
+										Blog Details
+									</a>
+								</li>
 							</ul>
 						</a>
 						<a href='#' className='Appmenu-item'>
-							Pages
-							<ul className='Appmenu-dropdown'>
-								<li className='Appmenu-dropdownItem'>1</li>
-								<li className='Appmenu-dropdownItem'>2</li>
-								<li className='Appmenu-dropdownItem'>3</li>
-								<li className='Appmenu-dropdownItem'>4</li>
-								<li className='Appmenu-dropdownItem'>5</li>
-								<li className='Appmenu-dropdownItem'>6</li>
-								<li className='Appmenu-dropdownItem'>7</li>
-								<li className='Appmenu-dropdownItem'>8</li>
-								<li className='Appmenu-dropdownItem'>9</li>
-								<li className='Appmenu-dropdownItem'>10</li>
+							<span>Pages</span>
+							<span className='Appmenu-dropIcon'>
+								<Icon className='fa-solid fa-angle-down' />
+							</span>
+
+							<ul className='Appmenu-submenu'>
+								<li className='Appmenu-submenuItem'>
+									<a href='' className='Appmenu-submenuLink'>
+										About us
+									</a>
+								</li>
+								<li className='Appmenu-submenuItem'>
+									<a href='' className='Appmenu-submenuLink'>
+										Reservation
+									</a>
+								</li>
+								<li className='Appmenu-submenuItem'>
+									<a href='' className='Appmenu-submenuLink'>
+										Chefs
+									</a>
+								</li>
+								<li className='Appmenu-submenuItem'>
+									<a href='' className='Appmenu-submenuLink'>
+										Testimonials
+									</a>
+								</li>
+								<li className='Appmenu-submenuItem'>
+									<a href='' className='Appmenu-submenuLink'>
+										FAQ
+									</a>
+								</li>
+								<li className='Appmenu-submenuItem'>
+									<a href='' className='Appmenu-submenuLink'>
+										User Pages
+									</a>
+								</li>
+								<li className='Appmenu-submenuItem'>
+									<a href='' className='Appmenu-submenuLink'>
+										Customer Dashboard
+									</a>
+								</li>
+								<li className='Appmenu-submenuItem'>
+									<a href='' className='Appmenu-submenuLink'>
+										Privacy Policy
+									</a>
+								</li>
+								<li className='Appmenu-submenuItem'>
+									<a href='' className='Appmenu-submenuLink'>
+										Terms Of Service
+									</a>
+								</li>
+								<li className='Appmenu-submenuItem'>
+									<a href='' className='Appmenu-submenuLink'>
+										404 Error
+									</a>
+								</li>
 							</ul>
 						</a>
 						<a href='#' className='Appmenu-item'>

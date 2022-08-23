@@ -5,6 +5,7 @@ const Carousel = ({ children, show }) => {
 	const settings = {
 		autoplay: true,
 		arrows: false,
+		dots: true,
 		autoplaySpeed: 6000,
 		infinite: true,
 		speed: 1500,

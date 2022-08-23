@@ -95,4 +95,8 @@
 			color: map-get($black, secondary);
 		}
 	}
+
+	&-text {
+		margin-right: 5px;
+	}
 }

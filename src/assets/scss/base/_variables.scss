@@ -12,6 +12,7 @@ $white: #ffffff;
 $gray: (
 	input: #dddddd75,
 	border: #dbdbdb78,
+	submenu: #f7f7f7,
 
 	dark: #818090,
 	medium: #c4c4c457,
@@ -24,4 +25,6 @@ $cream: #fceceb;
 //Shadow
 $shadow: 8px 10px 24px rgb(0 0 0 / 10%);
 $shadow-menu: 0 2px 28px 0 rgb(0 0 0 / 6%);
+$shadow-submenu: 0 0 15px 0 rgb(0 0 0 / 10%);
 $shadow-offer: 6px 8px 20px rgb(0 0 0 / 8%);
+$shadow-testimonial: -4px -4px 16px rgb(0 0 0 / 8%), 4px 8px 16px rgb(0 0 0 / 8%);

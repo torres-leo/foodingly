@@ -1,6 +1,6 @@
 import React from 'react';
 import CarouselTestimonial from '../customCarousel';
-import ReservationCard from '../Reservation/ReservationCard';
+import TestimonialCard from './TestimonialCard';
 
 const Testimonials = () => {
 	return (
@@ -14,10 +14,22 @@ const Testimonials = () => {
 				</h2>
 
 				<CarouselTestimonial show={3}>
-					<ReservationCard />
-					<ReservationCard />
-					<ReservationCard />
-					<ReservationCard />
+					<TestimonialCard
+						image='https://foodingly.netlify.app/assets/img/review/review1.png'
+						testimonialName='Manresh Chandra'
+					/>
+					<TestimonialCard
+						image='https://foodingly.netlify.app/assets/img/review/review2.png'
+						testimonialName='Manresh Chandra'
+					/>
+					<TestimonialCard
+						image='https://foodingly.netlify.app/assets/img/review/review3.png'
+						testimonialName='Manresh Chandra'
+					/>
+					<TestimonialCard
+						image='https://foodingly.netlify.app/assets/img/review/review4.png'
+						testimonialName='Manresh Chandra'
+					/>
 				</CarouselTestimonial>
 			</div>
 		</div>

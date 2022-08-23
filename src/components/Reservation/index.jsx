@@ -13,7 +13,7 @@ const Reservation = () => {
 					<span>What we offer</span>
 				</h2>
 
-				<CarouselReservation show={4}>
+				<CarouselReservation show={4} className='Reservation-carousel'>
 					<ReservationCard
 						title='Breakfast'
 						icon='https://foodingly.netlify.app/assets/img/service/1.png'
