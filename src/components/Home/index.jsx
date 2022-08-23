@@ -1,13 +1,13 @@
 import React from 'react';
 import Layout from '../Layout';
 import Hero from './Hero';
-import Reservation from '../Reservation/index';
+import Reservation from '../Reservation';
 import SpecialOffers from './SpecialOrders';
 import Products from './Products';
 import DinnerPlan from './DinnerPlan';
 import Chefs from './Chefs';
 import Download from './Download';
-import Testimonials from './Testimonials';
+import Testimonials from '../Testimonial';
 import Subscribe from './Subscribe';
 import Blog from './Blog';
 

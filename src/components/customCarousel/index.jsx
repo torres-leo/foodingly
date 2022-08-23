@@ -1,15 +1,14 @@
 import React from 'react';
 import Slider from 'react-slick';
-import ReservationCard from './';
 
-const Carousel = ({ children }) => {
+const Carousel = ({ children, show }) => {
 	const settings = {
 		autoplay: true,
 		arrows: false,
 		autoplaySpeed: 6000,
 		infinite: true,
 		speed: 1500,
-		slidesToShow: 4,
+		slidesToShow: show,
 		slidesToScroll: 1,
 		pauseOnHover: false,
 	};
