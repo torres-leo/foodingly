@@ -1,7 +1,19 @@
 import React from 'react';
 import Icon from '../Icon';
+import CustomDropdown from '../CustomDropdown';
 
-const AppBar = () => {
+function AppBar() {
+	const menu = [
+		{
+			id: 1,
+			title: 'English',
+			firstText: 'English',
+			secondText: 'Arabic',
+			thirdText: 'French',
+		},
+		{ id: 2, title: 'USD', firstText: 'USD', secondText: 'BD', thirdText: 'URQ' },
+	];
+
 	return (
 		<div className='Appbar'>
 			<div className='Appbar-content'>
@@ -23,20 +35,22 @@ const AppBar = () => {
 					<li className='Appbar-item'>+011 234 567 89</li>
 					<li className='Appbar-item'>contact@domain.com</li>
 				</ul>
-				<ul className='AppbarSettings'>
-					<li className='Appbar-setting'>
-						<span className='Appbar-text'>English</span>
-						<Icon className='fa-solid fa-angle-down' />
-					</li>
-					<li className='Appbar-setting'>
-						<span className='Appbar-text'>USD</span>
-						<Icon className='fa-solid fa-angle-down' />
-					</li>
-					<li className='Appbar-setting'>My Account</li>
-				</ul>
+
+				<div className='Appbar-settings'>
+					{menu.map((element) => (
+						<CustomDropdown
+							key={element.id}
+							title={element.title}
+							firstText={element.firstText}
+							secondText={element.secondText}
+							thirdText={element.thirdText}
+						/>
+					))}
+					<p className='Appbar-text'>My account</p>
+				</div>
 			</div>
 		</div>
 	);
-};
+}
 
 export default AppBar;

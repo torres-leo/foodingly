@@ -1,0 +1,58 @@
+.CustomDropdown {
+	display: inline-flex;
+	&::after {
+		content: '';
+		position: relative;
+		top: 5px;
+		right: 1px;
+		width: 1px;
+		height: 18px;
+		background-color: map-get($gray, border);
+	}
+	.btn {
+		background-color: $green;
+		border: none;
+		border-radius: 0;
+		box-shadow: none;
+		color: $white;
+		font-family: $font-primary;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 1.5;
+		margin-left: 15px;
+		margin-right: 15px;
+		padding: 0;
+
+		&::after {
+			margin-left: 5px;
+		}
+
+		&:hover {
+			background-color: $green;
+			color: map-get($black, secondary);
+			box-shadow: none;
+		}
+
+		&:active {
+			background-color: $green;
+			border: none;
+			&:focus {
+				border: none;
+				border-color: transparent;
+				background-color: $green;
+				box-shadow: none;
+			}
+		}
+
+		&:focus {
+			background-color: transparent;
+			border: none;
+			box-shadow: none;
+		}
+
+		&:focus-visible {
+			background-color: transparent;
+			border: none;
+		}
+	}
+}

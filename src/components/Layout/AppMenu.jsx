@@ -22,27 +22,27 @@ const AppMenu = () => {
 							</span>
 							<ul className='Appmenu-submenu'>
 								<li className='Appmenu-submenuItem'>
-									<a className='Appmenu-submenuLink'>Food Grid</a>
+									<span className='Appmenu-submenuLink'>Food Grid</span>
 								</li>
 								<li className='Appmenu-submenuItem'>
-									<a href='' className='Appmenu-submenuLink'>
+									<span href='' className='Appmenu-submenuLink'>
 										Food Details
-									</a>
+									</span>
 								</li>
 								<li className='Appmenu-submenuItem'>
-									<a href='' className='Appmenu-submenuLink'>
+									<span href='' className='Appmenu-submenuLink'>
 										Cart View
-									</a>
+									</span>
 								</li>
 								<li className='Appmenu-submenuItem'>
-									<a href='' className='Appmenu-submenuLink'>
+									<span href='' className='Appmenu-submenuLink'>
 										Checkout View
-									</a>
+									</span>
 								</li>
 								<li className='Appmenu-submenuItem'>
-									<a href='' className='Appmenu-submenuLink'>
+									<span href='' className='Appmenu-submenuLink'>
 										Order Success
-									</a>
+									</span>
 								</li>
 							</ul>
 						</a>
@@ -53,14 +53,14 @@ const AppMenu = () => {
 							</span>
 							<ul className='Appmenu-submenu'>
 								<li className='Appmenu-submenuItem'>
-									<a href='' className='Appmenu-submenuLink'>
+									<span href='' className='Appmenu-submenuLink'>
 										Blog
-									</a>
+									</span>
 								</li>
 								<li className='Appmenu-submenuItem'>
-									<a href='' className='Appmenu-submenuLink'>
+									<span href='' className='Appmenu-submenuLink'>
 										Blog Details
-									</a>
+									</span>
 								</li>
 							</ul>
 						</a>
@@ -72,57 +72,58 @@ const AppMenu = () => {
 
 							<ul className='Appmenu-submenu'>
 								<li className='Appmenu-submenuItem'>
-									<a href='' className='Appmenu-submenuLink'>
+									<span href='' className='Appmenu-submenuLink'>
 										About us
-									</a>
+									</span>
 								</li>
 								<li className='Appmenu-submenuItem'>
-									<a href='' className='Appmenu-submenuLink'>
+									<span href='' className='Appmenu-submenuLink'>
 										Reservation
-									</a>
+									</span>
 								</li>
 								<li className='Appmenu-submenuItem'>
-									<a href='' className='Appmenu-submenuLink'>
+									<span href='' className='Appmenu-submenuLink'>
 										Chefs
-									</a>
+									</span>
 								</li>
 								<li className='Appmenu-submenuItem'>
-									<a href='' className='Appmenu-submenuLink'>
+									<span href='' className='Appmenu-submenuLink'>
 										Testimonials
-									</a>
+									</span>
 								</li>
 								<li className='Appmenu-submenuItem'>
-									<a href='' className='Appmenu-submenuLink'>
+									<span href='' className='Appmenu-submenuLink'>
 										FAQ
-									</a>
+									</span>
 								</li>
 								<li className='Appmenu-submenuItem'>
-									<a href='' className='Appmenu-submenuLink'>
+									<span href='' className='Appmenu-submenuLink'>
 										User Pages
-									</a>
+									</span>
 								</li>
 								<li className='Appmenu-submenuItem'>
-									<a href='' className='Appmenu-submenuLink'>
+									<span href='' className='Appmenu-submenuLink'>
 										Customer Dashboard
-									</a>
+									</span>
 								</li>
 								<li className='Appmenu-submenuItem'>
-									<a href='' className='Appmenu-submenuLink'>
+									<span href='' className='Appmenu-submenuLink'>
 										Privacy Policy
-									</a>
+									</span>
 								</li>
 								<li className='Appmenu-submenuItem'>
-									<a href='' className='Appmenu-submenuLink'>
+									<span href='' className='Appmenu-submenuLink'>
 										Terms Of Service
-									</a>
+									</span>
 								</li>
 								<li className='Appmenu-submenuItem'>
-									<a href='' className='Appmenu-submenuLink'>
+									<span href='' className='Appmenu-submenuLink'>
 										404 Error
-									</a>
+									</span>
 								</li>
 							</ul>
 						</a>
+
 						<a href='#' className='Appmenu-item'>
 							Contact
 						</a>

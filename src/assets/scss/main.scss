@@ -2,6 +2,7 @@
 @import 'base/fonts';
 @import 'base/variables';
 @import 'base/placeholder';
+// @import 'bootstrap/scss/bootstrap';
 
 @import 'page/home/hero';
 @import 'page/home/reservation';
@@ -16,5 +17,6 @@
 @import 'components/appbar';
 @import 'components/appmenu';
 @import 'components/button';
+@import 'components/dropdown';
 @import 'components/banner';
 @import 'components/footer';

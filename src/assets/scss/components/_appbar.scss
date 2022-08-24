@@ -6,15 +6,18 @@
 
 	&-content {
 		display: flex;
+		align-items: center;
 		justify-content: space-between;
-		max-width: 100%;
-		margin: 0 248px;
+		max-width: 1420px;
+		margin: 0 auto;
 	}
 
 	&-info {
 		color: $white;
 		display: flex;
-		flex: 1;
+		align-items: center;
+		justify-content: flex-start;
+		margin-bottom: 0;
 	}
 
 	&-item {
@@ -57,46 +60,16 @@
 		text-decoration: none;
 	}
 
-	&Settings {
+	&-settings {
 		display: flex;
-		flex: 1;
-		justify-content: flex-end;
-	}
-
-	&-setting {
-		color: $white;
-		font-family: $font-primary;
-		font-size: 14px;
-		font-weight: 500 !important;
-		list-style: none;
-		line-height: 1.5;
-		padding: 0 15px;
-		transition: color 0.2s ease-in-out;
-
-		&::after {
-			content: '';
-			display: inline-flex;
-			position: relative;
-			top: 5px;
-			right: -15px;
-			width: 1px;
-			height: 15px;
-			background-color: map-get($gray, border);
-		}
-
-		&:nth-of-type(3) {
-			&::after {
-				display: none;
-			}
-		}
-
-		&:hover {
-			cursor: pointer;
-			color: map-get($black, secondary);
-		}
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 0;
+		position: relative;
 	}
 
 	&-text {
-		margin-right: 5px;
+		margin-left: 10px;
+		margin-bottom: 0;
 	}
 }

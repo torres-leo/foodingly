@@ -1,6 +1,9 @@
 import React from 'react';
+import useAxios from 'axios-hooks';
 
 const Products = () => {
+	const [{ data }] = useAxios('/products');
+	console.log(data);
 	return (
 		<div className='Products'>
 			<div className='ProductsContent'>
