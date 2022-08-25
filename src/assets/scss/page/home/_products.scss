@@ -1,12 +1,14 @@
 .Products {
 	background-color: map-get($gray, regular);
 
-	&Content {
+	&-content {
 		padding: 80px 0;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
+		margin: 0 auto;
+		width: 1420px;
 	}
 
 	&-text {
@@ -14,6 +16,7 @@
 		font-size: 36px;
 		font-family: $font-primary;
 		font-weight: 500;
+		margin-bottom: 60px;
 
 		&::after {
 			background: $green;
@@ -36,5 +39,94 @@
 		margin-bottom: 20px;
 
 		@extend .arrows;
+	}
+
+	&-list {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 24px;
+		width: 100%;
+	}
+
+	&-card {
+		background-color: $white;
+		border-radius: 11px;
+		height: 362px;
+		width: 336px;
+		overflow: hidden;
+
+		&:hover {
+			box-shadow: $shadow-product;
+
+			.Products-cardImage {
+				transform: scale(1.2);
+			}
+		}
+	}
+
+	&-cardHeader {
+		background-color: $white;
+		border-radius: 11px;
+		width: 100%;
+		padding: 10px;
+		position: relative;
+	}
+
+	&-cardBody {
+		padding: 20px 15px;
+	}
+
+	&-cardImage {
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		border-top: 11px;
+		height: 198px;
+		object-fit: cover;
+		transition: all 0.4s ease-in-out;
+		width: 100%;
+	}
+
+	&-cardName {
+		color: map-get($black, primary);
+		cursor: pointer;
+		font-family: $font-primary;
+		font-size: 20px;
+		font-weight: 500;
+		margin-bottom: 0;
+		transition: color 0.4s ease-in-out;
+		text-transform: capitalize;
+
+		&:hover {
+			color: $green;
+		}
+	}
+
+	&-cardDiscount {
+		background-color: $green;
+		color: $white;
+		border-radius: 100%;
+		bottom: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: $font-primary;
+		font-size: 16px;
+		font-weight: 500;
+		height: 45px;
+		line-height: 45px;
+		position: absolute;
+		right: 40px;
+		text-align: end;
+		width: 45px;
+	}
+
+	&-cardRating {
+		margin-bottom: 0;
+	}
+	&-cardPrice {
+		margin-bottom: 0;
 	}
 }

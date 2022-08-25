@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const instance = axios.create({
 	baseURL: import.meta.env.VITE_API_URL,
-	headers: { authorization: `Bearer ${import.meta.env.VITE_API_URL}` },
+	headers: { authorization: `Bearer ${import.meta.env.VITE_API_TOKEN}` },
 });
 
 const cache = new LRU({ max: 10 });

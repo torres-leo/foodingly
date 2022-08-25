@@ -3,7 +3,7 @@ import Layout from '../Layout';
 import Hero from './Hero';
 import Reservation from '../Reservation';
 import SpecialOffers from './SpecialOrders';
-import Products from './Products';
+import ProductsList from './ProductsList';
 import DinnerPlan from './DinnerPlan';
 import Chefs from './Chefs';
 import Download from './Download';
@@ -17,7 +17,7 @@ const Home = () => {
 			<Hero />
 			<Reservation />
 			<SpecialOffers />
-			<Products />
+			<ProductsList />
 			<DinnerPlan />
 			<Chefs />
 			<Download />

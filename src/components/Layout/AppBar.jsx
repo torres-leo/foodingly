@@ -10,6 +10,7 @@ function AppBar() {
 			firstText: 'English',
 			secondText: 'Arabic',
 			thirdText: 'French',
+			fourText: 'Lala',
 		},
 		{ id: 2, title: 'USD', firstText: 'USD', secondText: 'BD', thirdText: 'URQ' },
 	];
