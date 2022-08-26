@@ -9,7 +9,6 @@ const ProductsList = () => {
 	useEffect(() => {
 		if (!data) return;
 		setProductList(data);
-		console.log(data);
 	}, [data]);
 
 	return (

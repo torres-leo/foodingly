@@ -55,4 +55,32 @@
 		position: absolute;
 		top: 14px;
 	}
+
+	&.outline {
+		color: map-get($black, secondary);
+		background-color: $white;
+		border: 1px solid $green;
+		font-size: 14px;
+		padding: 5px 18px;
+
+		&:hover {
+			background-color: map-get($black, primary);
+			color: $white;
+		}
+	}
+
+	&.cart {
+		border: none;
+		color: $white;
+		font-family: $font-primary;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1.5;
+		padding: 5px 18px;
+
+		&:hover {
+			background-color: map-get($black, secondary);
+			color: $white;
+		}
+	}
 }

@@ -1,8 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Dock } from 'react-dock';
 import Icon from '../Icon';
 import Button from '../Button';
+import Cart from '../Cart';
 
 const AppMenu = () => {
+	const [isVisible, setIsVisible] = useState(false);
+
+	const renderModal = () => (
+		<Dock position='right' isVisible={isVisible} onVisibleChange={handleChange} fluid={true} size={0.165}>
+			<Cart handleChange={handleChange} />
+		</Dock>
+	);
+
+	const handleChange = () => {
+		setIsVisible(!isVisible);
+	};
+
 	return (
 		<div className='Appmenu sticky'>
 			<div className='Appmenu-container'>
@@ -130,7 +144,7 @@ const AppMenu = () => {
 					</nav>
 					<ul className='Appmenu-buttons'>
 						<li className='Appmenu-icon'>
-							<Icon className='fa-solid fa-bag-shopping' />
+							<Icon className='fa-solid fa-bag-shopping' onClick={handleChange} />
 						</li>
 						<li className='Appmenu-icon'>
 							<Icon className='fa-solid fa-magnifying-glass' />
@@ -142,6 +156,7 @@ const AppMenu = () => {
 							</Button>
 						</li>
 					</ul>
+					{renderModal()}
 				</div>
 			</div>
 		</div>
