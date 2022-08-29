@@ -7,13 +7,24 @@
 		align-items: center;
 		margin: 0 auto;
 		padding: 80px 0;
-		width: 1440px;
+		max-width: 1440px;
+
+		@include media-breakpoint-down(lg) {
+			align-items: flex-start;
+			justify-content: flex-start;
+			flex-direction: column;
+			width: 700px;
+		}
 	}
 
 	&-info {
 		display: flex;
 		align-items: center;
 		gap: 30px;
+
+		@include media-breakpoint-down(lg) {
+			margin-bottom: 30px;
+		}
 	}
 
 	&-icon {
@@ -27,7 +38,7 @@
 	}
 
 	&-text {
-		color: map-get($black, secondary);
+		color: map-get($black-color, secondary);
 		font-family: $font-primary;
 		font-size: 20px;
 		font-weight: 500;
@@ -42,6 +53,8 @@
 	&-form {
 		display: flex;
 		align-items: center;
+		flex: 1;
+		width: 100%;
 	}
 
 	&-input {
@@ -55,6 +68,10 @@
 		&:focus {
 			border: 2px dashed $green;
 			outline: none;
+		}
+
+		@include media-breakpoint-down(lg) {
+			width: 100%;
 		}
 	}
 }

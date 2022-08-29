@@ -46,7 +46,7 @@
 	}
 
 	&-item {
-		color: map-get($black, primary);
+		color: map-get($black-color, primary);
 		display: block;
 		font-family: $font-secondary;
 		font-size: 16px;
@@ -57,7 +57,7 @@
 		text-decoration: none;
 
 		&:hover {
-			color: map-get($black, primary);
+			color: map-get($black-color, primary);
 			.Appmenu-submenu {
 				opacity: 1;
 				visibility: visible;
@@ -93,7 +93,7 @@
 	}
 
 	&-submenuLink {
-		color: map-get($black, secondary);
+		color: map-get($black-color, secondary);
 		text-decoration: none;
 		&:hover {
 			color: $green;

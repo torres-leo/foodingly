@@ -5,7 +5,7 @@ import AppContext from '../../context/AppProvider';
 
 const Cart = ({ handleChange }) => {
 	const { cart } = useContext(AppContext);
-	console.log(cart);
+	// console.log(cart);
 
 	const renderItem = () =>
 		cart.map((element) => (

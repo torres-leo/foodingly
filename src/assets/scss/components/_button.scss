@@ -18,7 +18,7 @@
 		padding: 7px 10px;
 		&:hover {
 			background-color: $white;
-			color: map-get($black, secondary);
+			color: map-get($black-color, secondary);
 		}
 	}
 
@@ -27,7 +27,7 @@
 		font-size: 18px;
 		padding: 12px 35px;
 		&:hover {
-			background-color: map-get($black, primary);
+			background-color: map-get($black-color, primary);
 			color: $white;
 		}
 	}
@@ -40,8 +40,12 @@
 		height: 55px;
 		padding: 12px 35px;
 		&:hover {
-			background-color: map-get($black, primary);
+			background-color: map-get($black-color, primary);
 			color: $white;
+		}
+
+		@include media-breakpoint-down(lg) {
+			padding: 12px 20px;
 		}
 	}
 
@@ -57,14 +61,14 @@
 	}
 
 	&.outline {
-		color: map-get($black, secondary);
+		color: map-get($black-color, secondary);
 		background-color: $white;
 		border: 1px solid $green;
 		font-size: 14px;
 		padding: 5px 18px;
 
 		&:hover {
-			background-color: map-get($black, primary);
+			background-color: map-get($black-color, primary);
 			color: $white;
 		}
 	}
@@ -79,8 +83,29 @@
 		padding: 5px 18px;
 
 		&:hover {
-			background-color: map-get($black, secondary);
+			background-color: map-get($black-color, secondary);
 			color: $white;
+		}
+	}
+
+	&.products {
+		padding: 8px 30px;
+		transition: all 0.4s ease-in-out;
+
+		&:focus {
+			color: map-get($black-color, secondary);
+			color: map-get($black-color, secondary);
+			border: 1px solid transparent;
+
+			@include media-breakpoint-down(lg) {
+				background-color: $green;
+			}
+		}
+
+		@include media-breakpoint-down(lg) {
+			color: map-get($black-color, secondary);
+			padding: 6px 20px;
+			background-color: transparent;
 		}
 	}
 }

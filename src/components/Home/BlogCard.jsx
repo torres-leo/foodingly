@@ -2,12 +2,13 @@ import React from 'react';
 import Icon from '../Icon';
 import Button from '../Button';
 
-const BlogCard = ({ urlImage, title, text, date, by, textButton }) => {
+const BlogCard = ({ blog }) => {
+	const { image, title, author, text, date, info } = blog;
 	return (
 		<article className='Blog-card'>
 			<div className='Blog-containerImage'>
-				<img className='Blog-image' style={{ backgroundImage: `url(${urlImage})` }} />
-				<span className='button blog'>{textButton}</span>
+				<img className='Blog-image' style={{ backgroundImage: `url(${image})` }} />
+				<span className='button blog'>{info}</span>
 			</div>
 			<div className='Blog-cardInfo'>
 				<h3 className='Blog-cardTitle'>
@@ -26,7 +27,7 @@ const BlogCard = ({ urlImage, title, text, date, by, textButton }) => {
 						<Icon className='Blog-icon fa-solid fa-users' />
 						<div>
 							<p className='Blog-dateBold'>By:</p>
-							<p className='Blog-dateLight'>{by}</p>
+							<p className='Blog-dateLight'>{author}</p>
 						</div>
 					</div>
 				</div>

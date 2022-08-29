@@ -2,22 +2,23 @@
 	width: 100%;
 	background-color: map-get($gray, regular);
 
-	&-Content {
+	&-content {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
-		padding: 80px 0;
-		width: 1440px;
+		padding: 80px 0 100px;
+		max-width: 1440px;
 		margin: 0 auto;
-	}
 
-	&-heading {
-		margin-bottom: 55px;
+		@include media-breakpoint-down(lg) {
+			width: 720px;
+			padding: 70px 0;
+		}
 	}
 
 	&-title {
-		color: map-get($black, secondary);
+		color: map-get($black-color, secondary);
 		font-family: $font-primary;
 		font-size: 24px;
 		font-weight: 300;
@@ -28,10 +29,11 @@
 	}
 
 	&-text {
-		color: map-get($black, secondary);
+		color: map-get($black-color, secondary);
 		font-family: $font-primary;
 		font-size: 36px;
 		font-weight: 500;
+		margin-bottom: 55px;
 		text-align: center;
 		text-transform: capitalize;
 
@@ -51,9 +53,14 @@
 	&-cards {
 		display: flex;
 		align-items: flex-start;
-		justify-content: space-around;
-		height: 570px;
+		flex-wrap: wrap;
+		gap: 23px;
+		justify-content: center;
 		width: 100%;
+
+		@include media-breakpoint-down(lg) {
+			justify-content: flex-start;
+		}
 	}
 
 	&-card {
@@ -71,16 +78,24 @@
 				transform: scale(1.2) rotate(3deg);
 			}
 		}
+
+		@include media-breakpoint-down(lg) {
+			width: 348px;
+			height: auto;
+		}
 	}
 
 	&-containerImage {
-		height: 100%;
-		max-height: 274.11px;
+		height: 274.11px;
 		border-top-left-radius: 12px;
 		border-top-right-radius: 12px;
 		overflow: hidden;
 		transition: 0.4s all ease-in-out;
 		width: 100%;
+
+		@include media-breakpoint-down(lg) {
+			height: 201.97px;
+		}
 	}
 
 	&-image {
@@ -98,10 +113,14 @@
 
 	&-cardInfo {
 		padding: 35px 20px 15px;
+
+		@include media-breakpoint-down(lg) {
+			padding: 15px 20px;
+		}
 	}
 
 	&-cardTitle {
-		color: map-get($black, primary);
+		color: map-get($black-color, primary);
 		font-family: $font-primary;
 		font-size: 24px;
 		font-weight: 500;
@@ -148,7 +167,7 @@
 	}
 
 	&-dateBold {
-		color: map-get($black, secondary);
+		color: map-get($black-color, secondary);
 		font-size: 16px;
 		font-family: $font-primary;
 		font-weight: 500;

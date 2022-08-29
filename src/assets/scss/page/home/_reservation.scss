@@ -3,12 +3,17 @@
 	background-color: map-get($gray, regular);
 
 	&-content {
-		width: 1440px;
+		max-width: 1440px;
 		margin: 0 auto;
+
+		@include media-breakpoint-down(lg) {
+			width: 100%;
+			padding: 0 30px;
+		}
 	}
 
 	&-text {
-		color: map-get($black, secondary);
+		color: map-get($black-color, secondary);
 		font-family: $font-primary;
 		font-size: 36px;
 		font-weight: 500;
@@ -30,7 +35,7 @@
 	}
 
 	&-title {
-		color: map-get($black, secondary);
+		color: map-get($black-color, secondary);
 		font-family: $font-primary;
 		font-size: 24px;
 		font-weight: 300;

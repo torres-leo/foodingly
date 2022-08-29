@@ -29,7 +29,7 @@
 
 		&:hover {
 			background-color: $green;
-			color: map-get($black, secondary);
+			color: map-get($black-color, secondary);
 			box-shadow: none;
 		}
 

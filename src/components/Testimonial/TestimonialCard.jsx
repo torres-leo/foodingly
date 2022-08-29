@@ -1,11 +1,12 @@
 import React from 'react';
 import Icon from '../Icon';
 
-const TestimonialCard = ({ image, testimonialName }) => {
+const TestimonialCard = ({ person }) => {
+	const { image, name, date, text } = person;
 	return (
 		<div className='Testimonial-card'>
 			<div className='Testimonial-cardHeader'>
-				<p className='Testimonial-cardDate'>08 June, 2022</p>
+				<p className='Testimonial-cardDate'>{date}</p>
 				<div className='Testimonial-cardRating'>
 					<p className='Testimonial-cardRatingText'>Excellent</p>
 					<ul className='Testimonial-cardStars'>
@@ -30,12 +31,9 @@ const TestimonialCard = ({ image, testimonialName }) => {
 			<div className='Testimonial-cardBody'>
 				<div className='Testimonial-cardImage' style={{ backgroundImage: `url(${image})` }}></div>
 				<h3 className='Testimonial-cardName'>
-					<span>{testimonialName}</span>
+					<span>{name}</span>
 				</h3>
-				<p className='Testimonial-cardText'>
-					“Eu ipsum ut dolore magna minim cupidatat ullamco anim sit minim irure. Consectetur voluptate nisi magna
-					consectetur cillum proident dolore veniam voluptate adipisicing labore. Anim eiusmod dolor quis pariatur.”
-				</p>
+				<p className='Testimonial-cardText'>“{text}”</p>
 			</div>
 		</div>
 	);

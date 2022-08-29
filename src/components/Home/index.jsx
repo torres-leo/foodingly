@@ -1,8 +1,8 @@
 import React from 'react';
-import Layout from '../Layout';
+// import Layout from '../Layout';
 import Hero from './Hero';
 import Reservation from '../Reservation';
-import SpecialOffers from './SpecialOrders';
+import SpecialOffers from './SpecialOffers';
 import ProductsList from './ProductsList';
 import DinnerPlan from './DinnerPlan';
 import Chefs from './Chefs';
@@ -13,7 +13,7 @@ import Blog from './Blog';
 
 const Home = () => {
 	return (
-		<Layout>
+		<>
 			<Hero />
 			<Reservation />
 			<SpecialOffers />
@@ -24,7 +24,7 @@ const Home = () => {
 			<Testimonials />
 			<Subscribe />
 			<Blog />
-		</Layout>
+		</>
 	);
 };
 

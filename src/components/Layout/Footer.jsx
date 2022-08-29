@@ -5,20 +5,20 @@ const Footer = () => {
 	return (
 		<div className='Footer'>
 			<div className='Footer-container'>
-				<div>
+				<div className='Footer-help'>
 					<h5 className='Footer-title'>
 						<span>Need any help?</span>
 					</h5>
 					<div className='Footer-helpInfo'>
-						<div className='Footer-help'>
+						<div className='Footer-helpItem'>
 							<p className='Footer-helpText'>Call 24/7 for any help</p>
 							<p className='Footer-helpGreen'>+00 123 456 789</p>
 						</div>
-						<div className='Footer-help'>
+						<div className='Footer-helpItem'>
 							<p className='Footer-helpText'>Mail to our support team</p>
 							<p className='Footer-helpGreen'>support@domain.com</p>
 						</div>
-						<div className='Footer-help'>
+						<div className='Footer-helpItem'>
 							<p className='Footer-helpText'>Follow us on</p>
 							<ul className='Footer-socialList'>
 								<li className='Footer-socialLink'>
@@ -131,36 +131,36 @@ const Footer = () => {
 						<tbody>
 							<tr>
 								<th className='Footer-tablecell'>Monday</th>
-								<td className='Footer-tablecell'>0.9.00-18.00</td>
+								<td className='Footer-tablecell'>0.9.00 - 18.00</td>
 							</tr>
 							<tr>
 								<td className='Footer-tablecell'>Tuesday</td>
-								<td className='Footer-tablecell'>10.0.00-18.00</td>
+								<td className='Footer-tablecell'>10.00 - 18.00</td>
 							</tr>
 							<tr>
 								<td className='Footer-tablecell'>Wednesday</td>
-								<td className='Footer-tablecell'>11.0.00-18.00</td>
+								<td className='Footer-tablecell'>11.00 - 18.00</td>
 							</tr>
 							<tr>
 								<td className='Footer-tablecell'>Thursday</td>
-								<td className='Footer-tablecell'>12.0.00-18.00</td>
+								<td className='Footer-tablecell'>12.00 - 18.00</td>
 							</tr>
 							<tr>
 								<td className='Footer-tablecell'>Thursday</td>
-								<td className='Footer-tablecell'>14.0.00-18.00</td>
+								<td className='Footer-tablecell'>14.00 - 18.00</td>
 							</tr>
 							<tr>
 								<td className='Footer-tablecell'>Saturday, Sunday</td>
-								<td className='Footer-tablecell'>closed</td>
+								<td className='Footer-tablecell'>Closed</td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
 			</div>
-			<div className='Footer-copyright'>
-				<div className='Footer-content'>
-					<p className='Footer-text'>Copyright &copy; 2022 All Rights Reserved</p>
-					<div className='Footer-image' />
+			<div className='FooterCopyright'>
+				<div className='FooterCopyright-content'>
+					<p className='FooterCopyright-text'>Copyright &copy; 2022 All Rights Reserved</p>
+					<div className='FooterCopyright-image' />
 				</div>
 			</div>
 		</div>

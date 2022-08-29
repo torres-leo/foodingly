@@ -1,23 +1,33 @@
 .SpecialOffers {
-	width: 100%;
-
 	background-image: url('https://foodingly.netlify.app/assets/img/common/counter_bg.png');
 	height: 480px;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	object-fit: cover;
+	width: 100%;
 
-	&Content {
+	@include media-breakpoint-down(lg) {
+		width: 100%;
+		height: 340px;
+	}
+
+	&-content {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
 		padding: 80px 0;
+		margin: 0 auto;
+		width: 1420px;
+
+		@include media-breakpoint-down(lg) {
+			width: 100%;
+		}
 	}
 
 	&-text {
-		color: map-get($black, primary);
+		color: map-get($black-color, primary);
 		font-size: 53px;
 		font-family: $font-primary;
 		font-weight: 500;
@@ -28,13 +38,18 @@
 
 		&.primary {
 			text-align: left;
-			color: map-get($black, secondary);
+			color: map-get($black-color, secondary);
 			font-weight: 500;
+		}
+
+		@include media-breakpoint-down(lg) {
+			font-size: 30px;
+			line-height: 50px;
 		}
 	}
 
 	&-title {
-		color: map-get($black, primary);
+		color: map-get($black-color, primary);
 		font-family: $font-primary;
 		font-size: 20px;
 		font-weight: 300;

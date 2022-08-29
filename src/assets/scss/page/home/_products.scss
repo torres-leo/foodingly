@@ -8,11 +8,15 @@
 		align-items: center;
 		flex-direction: column;
 		margin: 0 auto;
-		width: 1420px;
+		max-width: 1420px;
+
+		@include media-breakpoint-down(lg) {
+			width: 720px;
+		}
 	}
 
 	&-text {
-		color: map-get($black, secondary);
+		color: map-get($black-color, secondary);
 		font-size: 36px;
 		font-family: $font-primary;
 		font-weight: 500;
@@ -32,7 +36,7 @@
 	}
 
 	&-title {
-		color: map-get($black, secondary);
+		color: map-get($black-color, secondary);
 		font-size: 24px;
 		font-family: $font-primary;
 		font-weight: 300;
@@ -47,7 +51,27 @@
 		flex-wrap: wrap;
 		justify-content: flex-start;
 		gap: 24px;
+		margin: 0 auto;
+
+		@include media-breakpoint-down(lg) {
+			padding: 0 10px;
+			justify-content: space-between;
+		}
+	}
+
+	&-filters {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 35px;
+		justify-content: center;
+		margin-bottom: 30px;
 		width: 100%;
+
+		@include media-breakpoint-down(lg) {
+			gap: 25px;
+			width: 720px;
+		}
 	}
 
 	&-card {
@@ -64,6 +88,10 @@
 			.Products-cardImage {
 				transform: scale(1.2);
 			}
+		}
+
+		@include media-breakpoint-down(lg) {
+			margin-bottom: 10px;
 		}
 	}
 
@@ -91,7 +119,7 @@
 	}
 
 	&-cardName {
-		color: map-get($black, primary);
+		color: map-get($black-color, primary);
 		cursor: pointer;
 		font-family: $font-primary;
 		font-size: 20px;

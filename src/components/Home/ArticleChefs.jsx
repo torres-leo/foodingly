@@ -1,10 +1,12 @@
 import React from 'react';
 import Icon from '../Icon';
 
-const ArticleChefs = ({ className, url, chefName, chefTitle }) => {
+const ArticleChefs = ({ chef }) => {
+	const { image, name, title } = chef;
+
 	return (
-		<article className={className}>
-			<div style={{ backgroundImage: `url(${url})` }} className='Chefs-image' />
+		<article className='Chefs-card'>
+			<div style={{ backgroundImage: `url(${image})` }} className='Chefs-image' />
 			<div className='Chefs-info'>
 				<ul className='Chefs-socialList'>
 					<li className='Chefs-link'>
@@ -28,8 +30,8 @@ const ArticleChefs = ({ className, url, chefName, chefTitle }) => {
 						</a>
 					</li>
 				</ul>
-				<h3 className='Chefs-name'>{chefName}</h3>
-				<p className='Chefs-profession'>{chefTitle}</p>
+				<h3 className='Chefs-name'>{name}</h3>
+				<p className='Chefs-profession'>{title}</p>
 			</div>
 		</article>
 	);

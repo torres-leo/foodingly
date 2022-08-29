@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Dock } from 'react-dock';
+import { Link } from 'react-router-dom';
 import Icon from '../Icon';
 import Button from '../Button';
 import Cart from '../Cart';
@@ -20,12 +21,14 @@ const AppMenu = () => {
 	return (
 		<div className='Appmenu sticky'>
 			<div className='Appmenu-container'>
-				<div className='Appmenu-image'></div>
+				<Link to='/'>
+					<div className='Appmenu-image' />
+				</Link>
 				<div className='Appmenu-content'>
 					<nav className='Appmenu-nav'>
-						<a href='#' className='Appmenu-item'>
+						<Link to='/' className='Appmenu-item'>
 							Home
-						</a>
+						</Link>
 						<a href='#' className='Appmenu-item'>
 							About us
 						</a>
@@ -138,9 +141,9 @@ const AppMenu = () => {
 							</ul>
 						</a>
 
-						<a href='#' className='Appmenu-item'>
+						<Link to='contact' className='Appmenu-item'>
 							Contact
-						</a>
+						</Link>
 					</nav>
 					<ul className='Appmenu-buttons'>
 						<li className='Appmenu-icon'>

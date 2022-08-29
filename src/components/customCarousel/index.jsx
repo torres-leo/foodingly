@@ -12,6 +12,17 @@ const Carousel = ({ children, show }) => {
 		slidesToShow: show,
 		slidesToScroll: 1,
 		pauseOnHover: false,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					infinite: true,
+					dots: true,
+				},
+			},
+		],
 	};
 	return <Slider {...settings}>{children}</Slider>;
 };

@@ -1,12 +1,17 @@
 .Download {
 	background-color: $white;
 
-	&Content {
+	&-content {
 		display: flex;
 		align-items: flex-start;
-		padding: 80px 0;
-		width: 1440px;
-		margin: 0 240px;
+		justify-content: center;
+		padding: 80px;
+		margin: 0 auto;
+		max-width: 1440px;
+
+		@include media-breakpoint-down(lg) {
+			width: 100%;
+		}
 	}
 
 	&-info {
@@ -21,6 +26,11 @@
 		font-weight: 500;
 		max-width: 665px;
 		margin-bottom: 20px;
+
+		@include media-breakpoint-down(lg) {
+			font-size: 41px;
+			line-height: 60px;
+		}
 	}
 
 	&-text {
@@ -30,13 +40,18 @@
 		font-weight: 400;
 		line-height: 35px;
 		max-width: 696px;
-		padding-bottom: 35px;
+		// padding-bottom: 35px;
+		margin-bottom: 35px;
 	}
 
 	&-image {
 		background-image: url('https://foodingly.netlify.app/assets/img/promotion/app.png');
 		width: 446px;
 		height: 556px;
+
+		@include media-breakpoint-down(lg) {
+			display: none;
+		}
 	}
 
 	&-buttons {

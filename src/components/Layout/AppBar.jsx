@@ -10,7 +10,6 @@ function AppBar() {
 			firstText: 'English',
 			secondText: 'Arabic',
 			thirdText: 'French',
-			fourText: 'Lala',
 		},
 		{ id: 2, title: 'USD', firstText: 'USD', secondText: 'BD', thirdText: 'URQ' },
 	];
@@ -39,13 +38,7 @@ function AppBar() {
 
 				<div className='Appbar-settings'>
 					{menu.map((element) => (
-						<CustomDropdown
-							key={element.id}
-							title={element.title}
-							firstText={element.firstText}
-							secondText={element.secondText}
-							thirdText={element.thirdText}
-						/>
+						<CustomDropdown key={element.id} element={element} />
 					))}
 					<p className='Appbar-text'>My account</p>
 				</div>

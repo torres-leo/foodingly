@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
-const CustomDropdown = ({ title, firstText, secondText, thirdText }) => {
+const CustomDropdown = ({ element }) => {
+	const { title, firstText, secondText, thirdText } = element;
 	const [dropdownOpen, setDropdownOpen] = useState(false);
 	const toggle = () => setDropdownOpen((prevState) => !prevState);
 

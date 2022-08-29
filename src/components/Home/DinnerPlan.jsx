@@ -4,7 +4,7 @@ import Button from '../Button';
 const DinnerPlan = () => {
 	return (
 		<div className='Banner'>
-			<div className='BannerContent'>
+			<div className='Banner-content'>
 				<div className='Banner-info'>
 					<h2 className='Banner-title'>Do You Have Any Dinner Plan Today? Reserve Your Tbale</h2>
 					<p className='Banner-text'>

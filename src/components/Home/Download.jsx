@@ -3,7 +3,7 @@ import React from 'react';
 const Download = () => {
 	return (
 		<div className='Download'>
-			<div className='DownloadContent'>
+			<div className='Download-content'>
 				<div className='Download-info'>
 					<h2 className='Download-title'>Never Feel Hungry! Download Our Mobile App & Enjoy Delicious Food</h2>
 					<p className='Download-text'>
