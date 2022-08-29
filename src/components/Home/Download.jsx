@@ -14,15 +14,13 @@ const Download = () => {
 							style={{
 								backgroundImage: `url("https://foodingly.netlify.app/assets/img/promotion/apple-store-icon.png")`,
 							}}
-							className='Download-button'
+							className='Download-appleButton'
 						/>
 						<div
 							style={{
 								backgroundImage: `url("https://foodingly.netlify.app/assets/img/promotion/google-play-store-icon.png")`,
-								width: '159px',
-								height: '55px',
 							}}
-							className='Download-button'
+							className='Download-googleButton'
 						/>
 					</div>
 				</div>

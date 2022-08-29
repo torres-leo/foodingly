@@ -10,7 +10,7 @@ const AppMenu = () => {
 
 	const renderModal = () => (
 		<Dock position='right' isVisible={isVisible} onVisibleChange={handleChange} fluid={true} size={0.165}>
-			<Cart handleChange={handleChange} />
+			<Cart isVisible={isVisible} handleChange={handleChange} />
 		</Dock>
 	);
 

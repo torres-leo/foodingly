@@ -3,13 +3,16 @@
 
 	&-content {
 		padding: 80px 0;
-		justify-content: center;
-		align-items: center;
 		max-width: 1425px;
 		margin: 0 auto;
 
 		@include media-breakpoint-down(lg) {
 			width: 700px;
+		}
+
+		@include media-breakpoint-down(sm) {
+			padding: 40px 0;
+			width: 350px;
 		}
 	}
 
@@ -45,6 +48,10 @@
 			transform: translate(-50%, 50%);
 			width: 200px;
 		}
+
+		@include media-breakpoint-down(sm) {
+			font-size: 26px;
+		}
 	}
 
 	&-card {
@@ -60,6 +67,10 @@
 		@include media-breakpoint-down(lg) {
 			width: 340px;
 			height: 373.19px;
+		}
+		@include media-breakpoint-down(sm) {
+			width: 349px;
+			height: 368.38px;
 		}
 	}
 

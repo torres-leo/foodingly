@@ -3,11 +3,20 @@ import Button from '../Button';
 import AppContext from '../../context/AppProvider';
 
 const Products = ({ product }) => {
-	const { name, image, discount, price } = product;
-	const { handleAddToCart } = useContext(AppContext);
+	const { id, name, image, discount, price } = product;
+	const { cart, setCart, addItemToCart, createCart } = useContext(AppContext);
 
 	const showDiscount = () => {
 		if (discount) return <div className='Products-cardDiscount'>{discount}%</div>;
+	};
+
+	const handleAdd = async () => {
+		if (!cart) {
+			const cartCreated = await createCart();
+			setCart(cartCreated.data);
+			return addItemToCart(id, cartCreated.data.id);
+		}
+		return addItemToCart(id, cart.id);
 	};
 
 	return (
@@ -25,7 +34,7 @@ const Products = ({ product }) => {
 
 				<div className='Products-cardBuy'>
 					<p className='Products-cardPrice'>${price}</p>
-					<Button className='button outline' onClick={() => handleAddToCart(product)}>
+					<Button className='button outline' onClick={handleAdd}>
 						Add To Cart
 					</Button>
 				</div>

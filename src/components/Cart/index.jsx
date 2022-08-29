@@ -1,28 +1,39 @@
-import React, { useContext } from 'react';
+import React, { useEffect, useContext } from 'react';
 import Icon from '../Icon';
 import Button from '../Button';
 import AppContext from '../../context/AppProvider';
 
-const Cart = ({ handleChange }) => {
-	const { cart } = useContext(AppContext);
-	// console.log(cart);
+const Cart = ({ handleChange, isVisible }) => {
+	const { cart, setCart, showItemsCart } = useContext(AppContext);
+
+	useEffect(() => {
+		fetchCart();
+	}, [isVisible]);
+
+	const fetchCart = async () => {
+		if (!isVisible) return;
+		const cart = await showItemsCart();
+		setCart(cart.data);
+	};
+
+	console.log(cart.products);
 
 	const renderItem = () =>
-		cart.map((element) => (
+		cart?.products?.map((element) => (
 			<div className='Cart-item' key={element.id}>
 				<div className='Cart-itemImage' style={{ backgroundImage: `url(${element.image})` }} />
 				<div className='Cart-itemInfo'>
 					<p className='Cart-itemName'>{element.name.toLowerCase()}</p>
 					<p className='Cart-itemPrice'>${element.price}</p>
 				</div>
-				<Icon className='fa-solid fa-trash-can cart-icon' />
+				<Icon className='fa-solid fa-trash-can Cart-delete' />
 			</div>
 		));
 
 	return (
 		<div className='Cart'>
 			<div className='Cart-header'>
-				<span className='Cart-counter'>My Cart ({cart.length})</span>
+				<span className='Cart-counter'>My Cart ({cart?.products?.length})</span>
 				<Icon className='fa-solid fa-xmark Cart-close' onClick={handleChange} />
 			</div>
 			{renderItem()}

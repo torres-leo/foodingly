@@ -12,11 +12,19 @@
 		@include media-breakpoint-down(lg) {
 			width: 100%;
 		}
+
+		@include media-breakpoint-down(sm) {
+			padding: 40px 52px;
+		}
 	}
 
 	&-info {
 		width: 720px;
 		padding-top: 50px;
+
+		@include media-breakpoint-down(sm) {
+			width: 100%;
+		}
 	}
 
 	&-title {
@@ -31,6 +39,10 @@
 			font-size: 41px;
 			line-height: 60px;
 		}
+		@include media-breakpoint-down(sm) {
+			font-size: 24px;
+			line-height: 40px;
+		}
 	}
 
 	&-text {
@@ -40,8 +52,12 @@
 		font-weight: 400;
 		line-height: 35px;
 		max-width: 696px;
-		// padding-bottom: 35px;
 		margin-bottom: 35px;
+
+		@include media-breakpoint-down(sm) {
+			font-size: 14px;
+			line-height: 28px;
+		}
 	}
 
 	&-image {
@@ -61,12 +77,30 @@
 		gap: 22px;
 	}
 
-	&-button {
+	&-appleButton {
 		width: 167px;
 		height: 58px;
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
 		border-radius: 6px;
+
+		@include media-breakpoint-down(sm) {
+			width: 107.59px;
+			height: 37.36px;
+		}
+	}
+
+	&-googleButton {
+		width: 159px;
+		height: 55px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+
+		@include media-breakpoint-down(sm) {
+			width: 107.59px;
+			height: 37.36px;
+		}
 	}
 }

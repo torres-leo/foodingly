@@ -28,13 +28,13 @@
 		border-bottom: 1px dashed map-get($gray, border);
 		display: flex;
 		align-items: center;
-		justify-content: flex-start;
+		justify-content: space-between;
 		margin-bottom: 15px;
 		padding: 15px 0;
 		transition: all 0.4s ease-in-out;
 
 		&:hover {
-			.cart-icon {
+			.Cart-delete {
 				opacity: 1;
 				visibility: visible;
 			}
@@ -66,10 +66,14 @@
 		margin-bottom: 0;
 	}
 
-	.cart-icon {
+	&-delete {
 		opacity: 0;
 		visibility: hidden;
 		transition: all 0.2s ease-in-out;
+
+		&:hover {
+			color: $red;
+		}
 	}
 
 	&-total {

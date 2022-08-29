@@ -1,5 +1,4 @@
 import React from 'react';
-// import Layout from '../Layout';
 import Hero from './Hero';
 import Reservation from '../Reservation';
 import SpecialOffers from './SpecialOffers';

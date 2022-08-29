@@ -1,17 +1,44 @@
 import React, { createContext, useState, useEffect } from 'react';
+import useAxios from 'axios-hooks';
 
 const AppContext = createContext();
 
 const AppProvider = ({ children }) => {
-	const [cart, setCart] = useState([]);
-	// const [cartItem, setCartItem] = useState({});
+	const [cart, setCart] = useState(null);
+	const [{ data }, refetch] = useAxios('/cart');
 
-	const handleAddToCart = ({ category, createdAt, deleteAt, updateAt, ...product }) => {
-		setCart([...cart, product]);
-		console.log(cart);
+	const createCart = () => {
+		return refetch({
+			method: 'POST',
+			data: {
+				products: [],
+			},
+		});
 	};
 
-	return <AppContext.Provider value={{ cart, setCart, handleAddToCart }}>{children}</AppContext.Provider>;
+	const addItemToCart = async (productId, cartId) => {
+		await refetch({
+			url: '/cart/add-product',
+			method: 'POST',
+			data: {
+				productId,
+				cartId,
+			},
+		});
+	};
+
+	const showItemsCart = () => {
+		return refetch({
+			url: `/cart/${cart?.id}`,
+			method: 'GET',
+		});
+	};
+
+	return (
+		<AppContext.Provider value={{ cart, setCart, addItemToCart, showItemsCart, createCart }}>
+			{children}
+		</AppContext.Provider>
+	);
 };
 
 export { AppProvider };

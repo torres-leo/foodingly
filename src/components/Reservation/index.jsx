@@ -1,5 +1,5 @@
 import React from 'react';
-import CarouselReservation from '../customCarousel';
+import Carousel from '../customCarousel';
 import ReservationCard from './ReservationCard';
 
 const Reservation = () => {
@@ -74,7 +74,7 @@ const Reservation = () => {
 					<span>What we offer</span>
 				</h2>
 
-				<CarouselReservation className='Reservation-carousel'>{renderOffers()}</CarouselReservation>
+				<Carousel show={4}>{renderOffers()}</Carousel>
 			</div>
 		</div>
 	);
