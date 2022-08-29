@@ -1,7 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 
-const Carousel = ({ children, show }) => {
+const Carousel = ({ children, className }) => {
 	const settings = {
 		autoplay: true,
 		arrows: false,
@@ -9,7 +9,7 @@ const Carousel = ({ children, show }) => {
 		autoplaySpeed: 6000,
 		infinite: true,
 		speed: 1500,
-		slidesToShow: show,
+		slidesToShow: 4,
 		slidesToScroll: 1,
 		pauseOnHover: false,
 		responsive: [
@@ -22,9 +22,22 @@ const Carousel = ({ children, show }) => {
 					dots: true,
 				},
 			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true,
+					dots: false,
+				},
+			},
 		],
 	};
-	return <Slider {...settings}>{children}</Slider>;
+	return (
+		<Slider {...settings} className={className}>
+			{children}
+		</Slider>
+	);
 };
 
 export default Carousel;

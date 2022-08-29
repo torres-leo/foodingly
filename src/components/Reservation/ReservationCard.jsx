@@ -1,6 +1,8 @@
 import React from 'react';
 
-const ReservationCard = ({ icon, title, text, image }) => {
+const ReservationCard = ({ offer }) => {
+	const { title, image, text, icon } = offer;
+
 	return (
 		<div className='Reservation-card'>
 			<div className='Reservation-cardIcon' style={{ backgroundImage: `url(${icon})` }} />

@@ -12,6 +12,14 @@
 		margin: 0 auto;
 		position: relative;
 		padding: 12px 0;
+
+		@include media-breakpoint-down(lg) {
+			width: 720px;
+		}
+
+		@include media-breakpoint-down(sm) {
+			width: 363px;
+		}
 	}
 
 	&.sticky {
@@ -25,16 +33,25 @@
 		align-items: center;
 		padding-left: 60px;
 		width: 100%;
+
+		@include media-breakpoint-down(lg) {
+			display: none;
+		}
 	}
 
 	&-image {
 		background-image: url('https://foodingly.netlify.app/assets/img/logo.png');
-		height: 40px;
 		width: 225px;
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
 		object-fit: cover;
+		height: 40px;
+
+		@include media-breakpoint-down(sm) {
+			height: 35.63px;
+			width: 175.5px;
+		}
 	}
 
 	&-nav {

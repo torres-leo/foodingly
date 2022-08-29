@@ -4,6 +4,10 @@
 	padding: 10px 0;
 	width: 100%;
 
+	@include media-breakpoint-down(sm) {
+		display: none;
+	}
+
 	&-content {
 		display: flex;
 		align-items: center;
