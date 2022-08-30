@@ -16,8 +16,6 @@ const Cart = ({ handleChange, isVisible }) => {
 		setCart(cart.data);
 	};
 
-	console.log(cart.products);
-
 	const renderItem = () =>
 		cart?.products?.map((element) => (
 			<div className='Cart-item' key={element.id}>
@@ -30,10 +28,19 @@ const Cart = ({ handleChange, isVisible }) => {
 			</div>
 		));
 
+	const subtotal = () => {
+		cart?.products.map((product) => {
+			let sum = 0;
+			sum = sum + product.price;
+		});
+		return sum;
+	};
+	console.log(subtotal);
+
 	return (
 		<div className='Cart'>
 			<div className='Cart-header'>
-				<span className='Cart-counter'>My Cart ({cart?.products?.length})</span>
+				<span className='Cart-counter'>My Cart ({cart?.products.length})</span>
 				<Icon className='fa-solid fa-xmark Cart-close' onClick={handleChange} />
 			</div>
 			{renderItem()}
