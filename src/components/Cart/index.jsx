@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from 'react';
+import React, { useEffect, useContext, useMemo } from 'react';
 import Icon from '../Icon';
 import Button from '../Button';
 import AppContext from '../../context/AppProvider';
@@ -27,15 +27,6 @@ const Cart = ({ handleChange, isVisible }) => {
 				<Icon className='fa-solid fa-trash-can Cart-delete' />
 			</div>
 		));
-
-	const subtotal = () => {
-		cart?.products.map((product) => {
-			let sum = 0;
-			sum = sum + product.price;
-		});
-		return sum;
-	};
-	console.log(subtotal);
 
 	return (
 		<div className='Cart'>
