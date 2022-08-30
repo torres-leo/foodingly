@@ -34,8 +34,19 @@ const AppProvider = ({ children }) => {
 		});
 	};
 
+	const deleteItemFromCart = (productId, cartId) => {
+		return refetch({
+			url: '/cart/remove-product',
+			method: 'POST',
+			data: {
+				productId,
+				cartId,
+			},
+		});
+	};
+
 	return (
-		<AppContext.Provider value={{ cart, setCart, addItemToCart, showItemsCart, createCart }}>
+		<AppContext.Provider value={{ cart, setCart, addItemToCart, showItemsCart, createCart, deleteItemFromCart }}>
 			{children}
 		</AppContext.Provider>
 	);

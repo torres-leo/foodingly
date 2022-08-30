@@ -1,5 +1,6 @@
 import React from 'react';
 import ContactCard from './ContactCard';
+import ContactForm from './ContactForm';
 
 const ContactUs = () => {
 	const offices = [
@@ -25,7 +26,7 @@ const ContactUs = () => {
 		},
 	];
 
-	const renderOffice = () => offices.map((office) => <ContactCard />);
+	const renderOffice = () => offices.map((office) => <ContactCard key={office.title} office={office} />);
 
 	return (
 		<div className='ContactWithus'>
@@ -38,6 +39,7 @@ const ContactUs = () => {
 					<span className='ContactWithus-text'>+00 123 456 789</span>
 				</div>
 				<div className='ContactWithus-cards'>{renderOffice()}</div>
+				<ContactForm />
 			</div>
 		</div>
 	);

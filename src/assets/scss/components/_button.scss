@@ -24,6 +24,8 @@
 
 	&.secondary {
 		border: none;
+		display: inline-block;
+		font-family: $font-primary;
 		font-size: 18px;
 		padding: 12px 35px;
 		&:hover {
@@ -31,10 +33,14 @@
 			color: $white;
 		}
 
-		@include media-breakpoint-down(sm) {
+		@include media-breakpoint-down(lg) {
 			font-size: 15px;
 			padding: 12px 20px;
 		}
+
+		// @include media-breakpoint-down(sm) {
+		// 	padding: 12px 20px;
+		// }
 	}
 
 	&.subscribe {
