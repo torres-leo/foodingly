@@ -3,11 +3,12 @@
 
 	&-content {
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
+		flex: 1;
+		justify-content: space-between;
 		margin: 0 auto;
 		padding: 80px 0;
-		max-width: 1440px;
+		max-width: 1416px;
 
 		@include media-breakpoint-down(lg) {
 			align-items: flex-start;
@@ -17,6 +18,7 @@
 		}
 
 		@include media-breakpoint-down(sm) {
+			padding: 40px 0;
 			width: 360px;
 		}
 	}
@@ -25,6 +27,7 @@
 		display: flex;
 		align-items: center;
 		gap: 30px;
+		width: 100%;
 
 		@include media-breakpoint-down(lg) {
 			margin-bottom: 30px;
@@ -38,12 +41,22 @@
 
 	&-icon {
 		background-image: url('https://foodingly.netlify.app/assets/img/common/email.png');
-		width: 123.39px;
-		height: 104.03px;
-		background-repeat: no-repeat;
 		background-position: center center;
+		background-repeat: no-repeat;
 		background-size: cover;
+		height: 104.03px;
 		object-fit: cover;
+		width: 123.39px;
+
+		@include media-breakpoint-down(lg) {
+			width: 104.39px;
+			height: 88.72px;
+		}
+
+		@include media-breakpoint-down(sm) {
+			width: 122.84px;
+			height: 104.41px;
+		}
 	}
 
 	&-text {
@@ -55,6 +68,7 @@
 
 		&:last-child {
 			font-size: 36px;
+			line-height: 40px;
 			margin-bottom: 0;
 		}
 
@@ -71,7 +85,7 @@
 	&-form {
 		display: flex;
 		align-items: center;
-		flex: 1;
+		justify-content: flex-end;
 		width: 100%;
 	}
 

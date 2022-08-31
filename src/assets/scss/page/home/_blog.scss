@@ -69,9 +69,11 @@
 
 		@include media-breakpoint-down(lg) {
 			justify-content: flex-start;
+			width: 698px;
 		}
 		@include media-breakpoint-down(sm) {
 			justify-content: center;
+			width: 100%;
 		}
 	}
 
@@ -92,8 +94,12 @@
 		}
 
 		@include media-breakpoint-down(lg) {
-			width: 348px;
+			width: 336px;
 			height: auto;
+		}
+
+		@include media-breakpoint-down(sm) {
+			width: 100%;
 		}
 	}
 

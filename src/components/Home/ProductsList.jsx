@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import useAxios from 'axios-hooks';
 import Button from '../Button';
-import Products from './Products';
+import Product from './Product';
 
 const ProductsList = () => {
 	const [productList, setProductList] = useState([]);
@@ -20,7 +20,7 @@ const ProductsList = () => {
 		});
 	};
 
-	const renderProducts = () => productList.map((product) => <Products product={product} key={product.id} />);
+	const renderProducts = () => productList.map((product) => <Product product={product} key={product.id} />);
 
 	return (
 		<div className='Products'>

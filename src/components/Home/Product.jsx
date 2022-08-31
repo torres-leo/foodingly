@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import Button from '../Button';
 import AppContext from '../../context/AppProvider';
 
-const Products = ({ product }) => {
+const Product = ({ product }) => {
 	const { id, name, image, discount, price } = product;
 	const { cart, setCart, addItemToCart, createCart } = useContext(AppContext);
 
@@ -43,4 +43,4 @@ const Products = ({ product }) => {
 	);
 };
 
-export default Products;
+export default Product;

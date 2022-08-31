@@ -2,7 +2,7 @@
 	background-color: map-get($gray, light);
 
 	&-content {
-		padding: 80px 0;
+		padding: 80px 0 100px;
 		max-width: 1425px;
 		margin: 0 auto;
 
@@ -11,7 +11,7 @@
 		}
 
 		@include media-breakpoint-down(sm) {
-			padding: 40px 0;
+			padding: 40px 0 60px;
 			width: 350px;
 		}
 	}
@@ -60,7 +60,7 @@
 		box-shadow: $shadow-testimonial;
 		max-width: 465.33px;
 		height: 317.19px;
-		margin-bottom: 20px;
+		margin-bottom: 40px;
 		width: 100%;
 		padding: 65px 20px 20px;
 

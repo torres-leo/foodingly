@@ -1,7 +1,7 @@
 import React from 'react';
 import Icon from '../Icon';
 
-const ArticleChefs = ({ chef }) => {
+const ChefsCard = ({ chef }) => {
 	const { image, name, title } = chef;
 
 	return (
@@ -37,4 +37,4 @@ const ArticleChefs = ({ chef }) => {
 	);
 };
 
-export default ArticleChefs;
+export default ChefsCard;

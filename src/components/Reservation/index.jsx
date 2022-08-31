@@ -74,7 +74,9 @@ const Reservation = () => {
 					<span>What we offer</span>
 				</h2>
 
-				<Carousel show={4}>{renderOffers()}</Carousel>
+				<div className='Reservation-cards'>
+					<Carousel show={4}>{renderOffers()}</Carousel>
+				</div>
 			</div>
 		</div>
 	);

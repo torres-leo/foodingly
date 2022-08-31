@@ -1,5 +1,5 @@
 import React from 'react';
-import ArticleChefs from './ArticleChefs';
+import ChefsCard from './ChefsCard';
 
 const Chefs = () => {
 	const chefList = [
@@ -25,7 +25,7 @@ const Chefs = () => {
 		},
 	];
 
-	const renderChefs = () => chefList.map((chef) => <ArticleChefs chef={chef} key={chef.name} />);
+	const renderChefs = () => chefList.map((chef) => <ChefsCard chef={chef} key={chef.name} />);
 
 	return (
 		<div className='Chefs'>
