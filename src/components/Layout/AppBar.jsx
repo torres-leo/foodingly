@@ -3,16 +3,8 @@ import Icon from '../Icon';
 import CustomDropdown from '../CustomDropdown';
 
 function AppBar() {
-	const menu = [
-		{
-			id: 1,
-			title: 'English',
-			firstText: 'English',
-			secondText: 'Arabic',
-			thirdText: 'French',
-		},
-		{ id: 2, title: 'USD', firstText: 'USD', secondText: 'BD', thirdText: 'URQ' },
-	];
+	const language = ['English', 'Arabic', 'French'];
+	const currency = ['USD', 'BD', 'URQ'];
 
 	return (
 		<div className='Appbar'>
@@ -37,9 +29,10 @@ function AppBar() {
 				</ul>
 
 				<div className='Appbar-settings'>
-					{menu.map((element) => (
-						<CustomDropdown key={element.id} element={element} />
-					))}
+					<CustomDropdown element={language} selected='English' />
+					<span className='Appbar-line'>|</span>
+					<CustomDropdown element={currency} selected='USD' />
+					<span className='Appbar-line'>|</span>
 					<p className='Appbar-text'>My account</p>
 				</div>
 			</div>

@@ -98,7 +98,12 @@
 	}
 
 	&-text {
-		margin-left: 10px;
+		margin-left: 15px;
 		margin-bottom: 0;
+	}
+
+	&-line {
+		opacity: 0.2;
+		// padding: 0 5px;
 	}
 }

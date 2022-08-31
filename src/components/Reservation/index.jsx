@@ -74,8 +74,10 @@ const Reservation = () => {
 					<span>What we offer</span>
 				</h2>
 
-				<div className='Reservation-cards'>
-					<Carousel show={4}>{renderOffers()}</Carousel>
+				<div className='Reservation-carousel'>
+					<Carousel show={4} className=''>
+						{renderOffers()}
+					</Carousel>
 				</div>
 			</div>
 		</div>

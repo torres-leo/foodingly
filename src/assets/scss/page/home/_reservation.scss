@@ -66,16 +66,39 @@
 		@extend .arrows;
 	}
 
-	&-cards {
-		max-width: 1440px;
-		width: 100%;
+	&-carousel {
+		margin: 0 auto;
+		width: 1420px;
 
 		@include media-breakpoint-down(lg) {
-			width: 760px;
+			width: 700px;
 		}
 		@include media-breakpoint-down(sm) {
 			width: 375px;
 		}
+
+		// .slick-slide {
+		// 	background-color: $white;
+		// 	border-radius: 10px;
+		// 	box-shadow: $shadow-offer;
+		// 	height: 360px;
+		// 	margin-bottom: 40px;
+		// 	padding: 20px;
+		// 	transition: 0.4s all ease-in-out;
+		// 	text-align: left;
+		// 	// width: 324px !important;
+		// }
+
+		// .slick-slide.slick-cloned {
+		// 	background-color: $white;
+		// 	width: 324px;
+		// }
+
+		// .slick-slide.slick-active {
+		// background-color: $white;
+		// width: 324px;
+		// box-shadow: $shadow-offer;
+		// }
 	}
 
 	&-card {
@@ -83,14 +106,14 @@
 		border-radius: 10px;
 		box-shadow: $shadow-offer;
 		padding: 20px;
-		width: 324px !important;
+		width: 324px;
 		height: 360px;
 		margin-bottom: 40px;
+		position: relative;
 		transition: 0.4s all ease-in-out;
 		text-align: left;
 
 		&:hover {
-			// box-shadow: none;
 			background-color: $green;
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
@@ -128,6 +151,7 @@
 		font-weight: 300;
 		line-height: 1.2;
 		margin-bottom: 18px;
+		width: 200px;
 	}
 
 	&-cardText {

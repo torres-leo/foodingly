@@ -4,6 +4,10 @@
 	width: 100%;
 	z-index: 100;
 
+	@include media-breakpoint-down(lg) {
+		display: none;
+	}
+
 	&-container {
 		display: flex;
 		align-items: center;
@@ -12,14 +16,6 @@
 		margin: 0 auto;
 		position: relative;
 		padding: 12px 0;
-
-		@include media-breakpoint-down(lg) {
-			width: 720px;
-		}
-
-		@include media-breakpoint-down(sm) {
-			width: 363px;
-		}
 	}
 
 	&.sticky {
@@ -41,7 +37,7 @@
 
 	&-image {
 		background-image: url('https://foodingly.netlify.app/assets/img/logo.png');
-		width: 225px;
+		width: 197px;
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;

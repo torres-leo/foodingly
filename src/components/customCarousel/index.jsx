@@ -1,9 +1,10 @@
 import React from 'react';
 import Slider from 'react-slick';
 
-const Carousel = ({ children, show }) => {
+const Carousel = ({ children, show, className }) => {
 	const settings = {
-		autoplay: true,
+		className: { className },
+		autoplay: false,
 		arrows: false,
 		dots: true,
 		autoplaySpeed: 6000,
