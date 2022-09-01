@@ -6,6 +6,7 @@ import Product from './Product';
 const ProductsList = () => {
 	const [productList, setProductList] = useState([]);
 	const [{ data }, refetch] = useAxios('/products');
+	const [active, setActive] = useState('');
 
 	useEffect(() => {
 		if (!data) return;
@@ -18,6 +19,7 @@ const ProductsList = () => {
 				category,
 			},
 		});
+		setActive(category);
 	};
 
 	const renderProducts = () => productList.map((product) => <Product product={product} key={product.id} />);
@@ -28,22 +30,34 @@ const ProductsList = () => {
 				<h3 className='Products-title'>Our Featured Items</h3>
 				<h2 className='Products-text'>Our most popular items</h2>
 				<div className='Products-filters'>
-					<Button className='button products' onClick={() => filterProducts('')}>
+					<Button
+						className={`button products ${active === '' ? 'filterActive' : ''}`}
+						onClick={() => filterProducts('')}>
 						All Categories
 					</Button>
-					<Button className='button products' onClick={() => filterProducts('NOODLES')}>
+					<Button
+						className={`button products ${active === 'NOODLES' ? 'filterActive' : ''}`}
+						onClick={() => filterProducts('NOODLES')}>
 						Noodles
 					</Button>
-					<Button className='button products' onClick={() => filterProducts('BURGER')}>
+					<Button
+						className={`button products ${active === 'BURGUER' ? 'filterActive' : ''} `}
+						onClick={() => filterProducts('BURGER')}>
 						Burger
 					</Button>
-					<Button className='button products' onClick={() => filterProducts('CHICKEN')}>
+					<Button
+						className={`button products ${active === 'CHICKEN' ? 'filterActive' : ''}`}
+						onClick={() => filterProducts('CHICKEN')}>
 						Chicken
 					</Button>
-					<Button className='button products' onClick={() => filterProducts('ICE_CREAM')}>
+					<Button
+						className={`button products ${active === 'ICE_CREAM' ? 'filterActive' : ''}`}
+						onClick={() => filterProducts('ICE_CREAM')}>
 						Ice Cream
 					</Button>
-					<Button className='button products' onClick={() => filterProducts('DRINKS')}>
+					<Button
+						className={`button products ${active === 'DRINKS' ? 'filterActive' : ''}`}
+						onClick={() => filterProducts('DRINKS')}>
 						Drinks
 					</Button>
 				</div>

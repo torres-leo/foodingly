@@ -95,7 +95,7 @@
 	&-card {
 		background-color: $white;
 		border-radius: 11px;
-		height: 390px;
+		height: 400px;
 		margin-bottom: 10px;
 		overflow: hidden;
 		position: relative;
@@ -207,9 +207,17 @@
 		margin-bottom: 0;
 	}
 
-	&-cardBuy {
+	&-cardAdd {
+		bottom: 20px;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		padding: 0 20px;
+		position: absolute;
+		width: 100%;
+	}
+
+	.filterActive {
+		color: map-get($black-color, secondary);
 	}
 }

@@ -11,12 +11,7 @@ const CustomDropdown = ({ element, selected, selectedDefault, customClass }) => 
 		setValue(item);
 	};
 
-	const renderItems = () =>
-		element.map((item) => (
-			<DropdownItem key={item} onClick={handleClick(item)}>
-				{item}
-			</DropdownItem>
-		));
+	const renderItems = () => element.map((item) => <DropdownItem onClick={handleClick(item)}>{item}</DropdownItem>);
 
 	return (
 		<div className={`CustomDropdown ${customClass}`}>

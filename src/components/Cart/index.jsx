@@ -20,6 +20,7 @@ const Cart = ({ handleChange, isVisible }) => {
 		await deleteItemFromCart(productId, cartId);
 		const cart = await showItemsCart();
 		setCart(cart.data);
+		set;
 	};
 
 	const subtotal = useMemo(() => {

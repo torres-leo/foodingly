@@ -48,10 +48,6 @@
 		}
 	}
 
-	&.menu {
-		// width: 150px;
-	}
-
 	&-options {
 		display: flex;
 		align-items: center;
@@ -61,7 +57,15 @@
 
 	&.hamburguer {
 		.dropdown-menu.show {
+			height: 245px;
+			overflow: scroll;
+			padding: 0;
 			width: 700px;
+			inset: 15px 0px auto auto !important;
+
+			@include media-breakpoint-down(sm) {
+				width: 360px;
+			}
 		}
 
 		.dropdown-item {

@@ -6,6 +6,7 @@ const AppContext = createContext();
 const AppProvider = ({ children }) => {
 	const [cart, setCart] = useState(null);
 	const [{ data }, refetch] = useAxios('/cart');
+	const [counter, setCounter] = useState(0);
 
 	const createCart = () => {
 		return refetch({
@@ -25,6 +26,7 @@ const AppProvider = ({ children }) => {
 				cartId,
 			},
 		});
+		setCounter(counter + 1);
 	};
 
 	const showItemsCart = () => {
@@ -34,8 +36,8 @@ const AppProvider = ({ children }) => {
 		});
 	};
 
-	const deleteItemFromCart = (productId, cartId) => {
-		return refetch({
+	const deleteItemFromCart = async (productId, cartId) => {
+		await refetch({
 			url: '/cart/remove-product',
 			method: 'POST',
 			data: {
@@ -43,10 +45,12 @@ const AppProvider = ({ children }) => {
 				cartId,
 			},
 		});
+		setCounter(counter - 1);
 	};
 
 	return (
-		<AppContext.Provider value={{ cart, setCart, addItemToCart, showItemsCart, createCart, deleteItemFromCart }}>
+		<AppContext.Provider
+			value={{ cart, setCart, addItemToCart, showItemsCart, createCart, deleteItemFromCart, counter }}>
 			{children}
 		</AppContext.Provider>
 	);

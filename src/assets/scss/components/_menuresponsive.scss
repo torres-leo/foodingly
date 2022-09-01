@@ -34,8 +34,13 @@
 		width: 175.5px;
 	}
 
-	&-icon {
+	&-option {
 		color: map-get($black-color, secondary);
+		font-size: 22px;
+	}
+
+	&-icon {
+		color: map-get($gray, dark);
 		font-size: 22px;
 	}
 }

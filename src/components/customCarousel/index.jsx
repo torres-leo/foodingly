@@ -1,40 +1,76 @@
-import React from 'react';
-import Slider from 'react-slick';
+import React, { useState } from 'react';
+import Carousel, { autoplayPlugin, slidesToShowPlugin, Dots } from '@brainhubeu/react-carousel';
+import '@brainhubeu/react-carousel/lib/style.css';
 
-const Carousel = ({ children, show, className }) => {
-	const settings = {
-		className: { className },
-		autoplay: true,
-		arrows: false,
-		dots: true,
-		autoplaySpeed: 6000,
-		infinite: true,
-		speed: 1500,
-		slidesToShow: show,
-		slidesToScroll: 1,
-		pauseOnHover: false,
-		responsive: [
-			{
-				breakpoint: 992,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1,
-					infinite: true,
-					dots: true,
-				},
-			},
-			{
-				breakpoint: 576,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					infinite: true,
-					dots: false,
-				},
-			},
-		],
+const CustomCarousel = ({ children, slides, className }) => {
+	const [value, setValue] = useState(0);
+	const onChange = (value) => {
+		setValue(value);
 	};
-	return <Slider {...settings}>{children}</Slider>;
+
+	return (
+		<>
+			<Carousel
+				value={value}
+				onChange={onChange}
+				plugins={[
+					'infinite',
+					{
+						resolve: autoplayPlugin,
+						options: {
+							interval: 5000,
+						},
+					},
+					{
+						resolve: slidesToShowPlugin,
+						options: {
+							numberOfSlides: slides,
+						},
+					},
+				]}
+				breakpoints={{
+					992: {
+						plugins: [
+							'infinite',
+							{
+								resolve: autoplayPlugin,
+								options: {
+									interval: 5000,
+								},
+							},
+							{
+								resolve: slidesToShowPlugin,
+								options: {
+									numberOfSlides: 2,
+								},
+							},
+						],
+					},
+					576: {
+						plugins: [
+							'infinite',
+							{
+								resolve: autoplayPlugin,
+								options: {
+									interval: 5000,
+								},
+							},
+							{
+								resolve: slidesToShowPlugin,
+								options: {
+									numberOfSlides: 1,
+								},
+							},
+						],
+					},
+				}}
+				animationSpeed={1500}
+				className={className}>
+				{children}
+			</Carousel>
+			<Dots value={value} onChange={onChange} number={4} />
+		</>
+	);
 };
 
-export default Carousel;
+export default CustomCarousel;

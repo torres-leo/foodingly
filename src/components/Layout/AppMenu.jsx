@@ -1,12 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { Dock } from 'react-dock';
 import { Link } from 'react-router-dom';
 import Icon from '../Icon';
 import Button from '../Button';
 import Cart from '../Cart';
+import AppContext from '../../context/AppProvider';
 
 const AppMenu = () => {
+	const { cart, setCart, showItemsCart, counter } = useContext(AppContext);
 	const [isVisible, setIsVisible] = useState(false);
+
+	// useEffect(() => {
+	// 	fetchCart();
+	// }, [cart]);
+
+	// const fetchCart = async () => {
+	// 	const cart = await showItemsCart();
+	// 	setCart(cart.data);
+	// };
 
 	const renderModal = () => (
 		<Dock position='right' isVisible={isVisible} onVisibleChange={handleChange} fluid={true} size={0.165}>
@@ -151,7 +162,11 @@ const AppMenu = () => {
 
 					<ul className='Appmenu-buttons'>
 						<li className='Appmenu-icon'>
-							<Icon className='fa-solid fa-bag-shopping' onClick={handleChange} />
+							<Icon className='fa-solid fa-bag-shopping' onClick={handleChange}>
+								<div className='counter'>
+									<span className='counter-text'>{counter}</span>
+								</div>
+							</Icon>
 						</li>
 						<li className='Appmenu-icon'>
 							<Icon className='fa-solid fa-magnifying-glass' />

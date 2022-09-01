@@ -31,9 +31,10 @@ const Product = ({ product }) => {
 					<span className='Products-cardRating'>4.8/5 Excellent</span>
 					<span className='Products-cardReview'>(1214 reviews)</span>
 				</p>
-
-				<div className='Products-cardBuy'>
-					<p className='Products-cardPrice'>${price}</p>
+			</div>
+			<div className='Products-cardAdd'>
+				<p className='Products-cardPrice'>${price}</p>
+				<div className='Products-cardButton'>
 					<Button className='button outline' onClick={handleAdd}>
 						Add To Cart
 					</Button>

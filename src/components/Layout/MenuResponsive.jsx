@@ -17,8 +17,8 @@ const MenuResponsive = () => {
 		setIsVisible(!isVisible);
 	};
 
-	const iconDots = <Icon className='fa-solid fa-ellipsis MenuResponsive-icon' />;
-	const menuBars = <Icon className='fa-solid fa-bars MenuResponsive-icon' />;
+	const iconDots = <Icon className='fa-solid fa-ellipsis MenuResponsive-option' />;
+	const menuBars = <Icon className='fa-solid fa-bars MenuResponsive-option' />;
 
 	const iconSearch = <Icon className='fa-solid fa-magnifying-glass MenuResponsive-icon' />;
 	const iconCart = <Icon className='fa-solid fa-bag-shopping MenuResponsive-icon' onClick={handleChange} />;
@@ -33,7 +33,7 @@ const MenuResponsive = () => {
 					<div className='MenuResponsive-image' />
 				</Link>
 				<div className='MenuResponsive-options'>
-					<CustomDropdown element={icons} selectedDefault={iconDots} customClass='icons' />
+					<CustomDropdown element={icons} selectedDefault={iconDots} customClass='icons'></CustomDropdown>
 					<CustomDropdown element={menu} selectedDefault={menuBars} customClass='hamburguer' />
 					{renderModal()}
 				</div>
