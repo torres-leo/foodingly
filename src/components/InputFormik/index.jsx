@@ -1,7 +1,9 @@
 import React from 'react';
+import Proptypes from 'prop-types';
+
 import { Field, ErrorMessage } from 'formik';
 
-const index = ({ name, placeholder, as, type, customClass }) => {
+const InputFormik = ({ name, placeholder, as, type, customClass }) => {
 	return (
 		<>
 			<Field
@@ -11,9 +13,27 @@ const index = ({ name, placeholder, as, type, customClass }) => {
 				placeholder={placeholder}
 				className={`ContactMessage-field ${customClass}`}
 			/>
-			<ErrorMessage name={name} />
+			<span className='ContactMessage-error'>
+				<ErrorMessage name={name} />
+			</span>
 		</>
 	);
 };
 
-export default index;
+InputFormik.defaultProps = {
+	name: '',
+	customClass: '',
+	as: '',
+	type: '',
+	placeholder: '',
+};
+
+InputFormik.propTypes = {
+	as: Proptypes.string,
+	name: Proptypes.string,
+	type: Proptypes.string,
+	customClass: Proptypes.string,
+	placeholder: Proptypes.string,
+};
+
+export default InputFormik;

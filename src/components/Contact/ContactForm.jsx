@@ -15,13 +15,17 @@ const ContactForm = () => {
 		message: Yup.string().max(1000).min(30).required('Write a message'),
 	});
 
+	const initialValues = {
+		name: '',
+		email: '',
+		phone: '',
+		message: '',
+	};
+
 	return (
 		<div className='ContactMessage'>
 			<div className='ContactMessage-title'>Leave us a message</div>
-			<Formik
-				initialValues={{ name: '', email: '', phone: '', message: '' }}
-				onSubmit={handleSubmit}
-				validationSchema={schema}>
+			<Formik initialValues={initialValues} onSubmit={handleSubmit} validationSchema={schema}>
 				<Form className='ContactMessage-form'>
 					<div className='ContactMessage-input'>
 						<InputFormik name='name' type='text' placeholder='First Name' />
