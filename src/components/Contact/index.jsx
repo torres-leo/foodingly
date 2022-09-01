@@ -1,11 +1,11 @@
 import React from 'react';
-import ContactBanner from './ContactBanner';
+import Banner from '../Banner';
 import ContactUs from './ContactUs';
 
 const Contact = () => {
 	return (
 		<main className='Contact'>
-			<ContactBanner />
+			<Banner title='Contact' />
 			<ContactUs />
 		</main>
 	);

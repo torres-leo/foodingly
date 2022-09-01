@@ -29,10 +29,10 @@ function AppBar() {
 				</ul>
 
 				<div className='Appbar-settings'>
-					<CustomDropdown element={language} selected='English' />
-					<span className='Appbar-line'>|</span>
-					<CustomDropdown element={currency} selected='USD' />
-					<span className='Appbar-line'>|</span>
+					<CustomDropdown element={language} customClass='line' selected='English' />
+					{/* <span className='Appbar-line'>|</span> */}
+					<CustomDropdown element={currency} customClass='line' selected='USD' />
+					{/* <span className='Appbar-line'>|</span> */}
 					<p className='Appbar-text'>My account</p>
 				</div>
 			</div>

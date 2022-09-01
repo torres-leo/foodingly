@@ -20,7 +20,6 @@ const Cart = ({ handleChange, isVisible }) => {
 		await deleteItemFromCart(productId, cartId);
 		const cart = await showItemsCart();
 		setCart(cart.data);
-		set;
 	};
 
 	const subtotal = useMemo(() => {
@@ -31,21 +30,19 @@ const Cart = ({ handleChange, isVisible }) => {
 		return sum;
 	}, [cart?.products]);
 
-	const renderItem = () =>
-		!cart?.products ? (
-			<p>No Products in Cart</p>
-		) : (
-			cart?.products?.map((element) => (
-				<div className='Cart-item' key={element.id}>
-					<div className='Cart-itemImage' style={{ backgroundImage: `url(${element.image})` }} />
-					<div className='Cart-itemInfo'>
-						<p className='Cart-itemName'>{element.name.toLowerCase()}</p>
-						<p className='Cart-itemPrice'>1 x ${element.price}</p>
-					</div>
-					<Icon className='fa-solid fa-trash-can Cart-delete' onClick={() => handleRemoveItem(element.id, cart?.id)} />
+	const renderItem = () => {
+		if (!cart?.products) return <p>No Products in Cart</p>;
+		return cart?.products?.map((element) => (
+			<div className='Cart-item' key={element.id}>
+				<div className='Cart-itemImage' style={{ backgroundImage: `url(${element.image})` }} />
+				<div className='Cart-itemInfo'>
+					<p className='Cart-itemName'>{element.name.toLowerCase()}</p>
+					<p className='Cart-itemPrice'>1 x ${element.price}</p>
 				</div>
-			))
-		);
+				<Icon className='fa-solid fa-trash-can Cart-delete' onClick={() => handleRemoveItem(element.id, cart?.id)} />
+			</div>
+		));
+	};
 
 	return (
 		<div className='Cart'>

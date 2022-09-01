@@ -53,6 +53,17 @@
 		align-items: center;
 		justify-content: center;
 		gap: 7px;
+
+		&::after {
+			background: map-get($gray, border);
+			display: inline-flex;
+			content: '';
+			height: 15px;
+			margin-left: 10px;
+			opacity: 0.6;
+			position: relative;
+			width: 2px;
+		}
 	}
 
 	&.hamburguer {

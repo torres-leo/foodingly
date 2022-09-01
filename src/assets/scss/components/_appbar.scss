@@ -102,8 +102,11 @@
 		margin-bottom: 0;
 	}
 
-	&-line {
-		opacity: 0.2;
-		// padding: 0 5px;
+	.dropdown-toggle.btn.btn-secondary {
+		margin: 0;
+	}
+
+	.CustomDropdown-options {
+		margin-left: 15px;
 	}
 }
