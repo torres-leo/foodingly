@@ -1,5 +1,6 @@
 import React from 'react';
 import Icon from '../Icon';
+import Proptypes from 'prop-types';
 
 const ChefsCard = ({ chef }) => {
 	const { image, name, title } = chef;
@@ -35,6 +36,18 @@ const ChefsCard = ({ chef }) => {
 			</div>
 		</article>
 	);
+};
+
+ChefsCard.defaultProps = {
+	image: '',
+	name: '',
+	title: '',
+};
+
+ChefsCard.propTypes = {
+	image: Proptypes.string,
+	name: Proptypes.string,
+	title: Proptypes.string,
 };
 
 export default ChefsCard;

@@ -1,4 +1,5 @@
 import React from 'react';
+import Proptypes from 'prop-types';
 
 const ReservationCard = ({ offer }) => {
 	const { title, image, text, icon } = offer;
@@ -11,6 +12,20 @@ const ReservationCard = ({ offer }) => {
 			<div className='Reservation-cardImage' style={{ backgroundImage: `url(${image})` }} />
 		</article>
 	);
+};
+
+ReservationCard.defaultProps = {
+	image: '',
+	name: '',
+	title: '',
+	icon: '',
+};
+
+ReservationCard.propTypes = {
+	image: Proptypes.string,
+	name: Proptypes.string,
+	title: Proptypes.string,
+	icon: Proptypes.string,
 };
 
 export default ReservationCard;

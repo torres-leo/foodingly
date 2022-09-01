@@ -1,7 +1,7 @@
 import React from 'react';
-// import Carousel from '../customCarousel/react-slick';
 import ReservationCard from './ReservationCard';
 import Carousel from '../customCarousel';
+import Proptypes from 'prop-types';
 
 const offers = [
 	{
@@ -52,6 +52,19 @@ const Reservation = () => {
 			</div>
 		</div>
 	);
+};
+
+Reservation.defaultProps = {
+	offer: {},
+};
+
+Reservation.propTypes = {
+	offer: Proptypes.shape({
+		image: Proptypes.string.isRequired,
+		title: Proptypes.string.isRequired,
+		icon: Proptypes.string.isRequired,
+		id: Proptypes.number.isRequired,
+	}),
 };
 
 export default Reservation;

@@ -1,5 +1,6 @@
 import React from 'react';
 import ChefsCard from './ChefsCard';
+import Proptypes from 'prop-types';
 
 const chefList = [
 	{
@@ -39,6 +40,18 @@ const Chefs = () => {
 			</div>
 		</div>
 	);
+};
+
+Chefs.defaultProps = {
+	chef: {},
+};
+
+Chefs.propTypes = {
+	chef: Proptypes.shape({
+		image: Proptypes.string.isRequired,
+		name: Proptypes.string.isRequired,
+		title: Proptypes.string.isRequired,
+	}),
 };
 
 export default Chefs;
