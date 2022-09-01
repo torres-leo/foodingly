@@ -7,17 +7,16 @@
 	}
 
 	&-content {
-		max-width: 1440px;
 		margin: 0 auto;
+		max-width: 1416px;
+		width: 100%;
 
 		@include media-breakpoint-down(lg) {
-			width: 100%;
-			padding: 0 30px;
+			width: 720px;
 		}
 
 		@include media-breakpoint-down(sm) {
-			width: 100%;
-			padding: 0 20px;
+			width: 360px;
 		}
 	}
 
@@ -68,50 +67,27 @@
 
 	&-carousel {
 		margin: 0 auto;
-		width: 1420px;
+		margin-bottom: 40px;
+		width: 100%;
 
-		@include media-breakpoint-down(lg) {
-			width: 700px;
-		}
-		@include media-breakpoint-down(sm) {
-			width: 375px;
-		}
-
-		// .slick-slide {
-		// 	background-color: $white;
-		// 	border-radius: 10px;
-		// 	box-shadow: $shadow-offer;
-		// 	height: 360px;
-		// 	margin-bottom: 40px;
-		// 	padding: 20px;
-		// 	transition: 0.4s all ease-in-out;
-		// 	text-align: left;
-		// 	// width: 324px !important;
-		// }
-
-		// .slick-slide.slick-cloned {
-		// 	background-color: $white;
-		// 	width: 324px;
-		// }
-
-		// .slick-slide.slick-active {
-		// background-color: $white;
-		// width: 324px;
-		// box-shadow: $shadow-offer;
-		// }
+		// 	@include media-breakpoint-down(lg) {
+		// 		width: 700px;
+		// 	}
+		// 	@include media-breakpoint-down(sm) {
+		// 		width: 375px;
+		// 	}
 	}
 
 	&-card {
 		background-color: $white;
 		border-radius: 10px;
 		box-shadow: $shadow-offer;
-		padding: 20px;
-		width: 324px;
 		height: 360px;
-		margin-bottom: 40px;
+		padding: 20px;
 		position: relative;
 		transition: 0.4s all ease-in-out;
 		text-align: left;
+		width: 324px;
 
 		&:hover {
 			background-color: $green;
@@ -119,18 +95,15 @@
 			border-top-right-radius: 0;
 			transform: translateY(-10px);
 
-			.Reservation-cardTitle {
-				color: $white;
-			}
-
+			.Reservation-cardTitle,
 			.Reservation-cardText {
 				color: $white;
 			}
 		}
 
 		@include media-breakpoint-down(sm) {
-			margin-bottom: 0;
-			width: 355px !important;
+			margin-bottom: 5px;
+			width: 100%;
 		}
 	}
 

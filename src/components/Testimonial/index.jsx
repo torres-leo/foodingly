@@ -1,6 +1,7 @@
 import React from 'react';
 import CarouselTestimonial from '../customCarousel';
 import TestimonialCard from './TestimonialCard';
+import NickCarousel from '../CustomDropdown/NickCarousel';
 
 const Testimonials = () => {
 	const testimonialList = [
@@ -43,7 +44,10 @@ const Testimonials = () => {
 					<span>What Our Client's Say About Us</span>
 				</h2>
 
-				<CarouselTestimonial show={3}>{renderTestimonials()}</CarouselTestimonial>
+				{/* <CarouselTestimonial show={3}>{renderTestimonials()}</CarouselTestimonial> */}
+				<NickCarousel slides={3} className='Testimonial-carousel'>
+					{renderTestimonials()}
+				</NickCarousel>
 			</div>
 		</div>
 	);
