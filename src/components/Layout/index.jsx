@@ -5,7 +5,7 @@ import Footer from './Footer';
 import Home from '../../pages/Home';
 import Contact from '../../pages/Contact';
 
-const index = () => {
+const LayoutApp = () => {
 	return (
 		<BrowserRouter>
 			<Header />
@@ -18,4 +18,4 @@ const index = () => {
 	);
 };
 
-export default index;
+export default LayoutApp;
